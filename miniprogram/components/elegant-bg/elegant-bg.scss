@@ -1,0 +1,50 @@
+.elegant-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.shape {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.shape-coral {
+  top: -120rpx;
+  right: -100rpx;
+  width: 480rpx;
+  height: 480rpx;
+  background: linear-gradient(135deg, #f58a7a 0%, #f5a8a0 100%);
+  opacity: 0.6;
+}
+
+.shape-teal {
+  top: 45%;
+  right: -80rpx;
+  width: 320rpx;
+  height: 320rpx;
+  background: linear-gradient(135deg, #88d9c5 0%, #a8e6d5 100%);
+  opacity: 0.5;
+}
+
+.shape-yellow {
+  bottom: -100rpx;
+  left: -120rpx;
+  width: 420rpx;
+  height: 420rpx;
+  background: linear-gradient(135deg, #fad277 0%, #fce4a0 100%);
+  opacity: 0.55;
+}
+
+.shape-blue {
+  bottom: -80rpx;
+  right: -60rpx;
+  width: 360rpx;
+  height: 360rpx;
+  background: linear-gradient(135deg, #2c3e50 0%, #3d5a80 100%);
+  opacity: 0.4;
+}

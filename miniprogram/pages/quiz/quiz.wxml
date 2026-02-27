@@ -1,0 +1,28 @@
+<navigation-bar title="{{title}}" back="{{true}}" color="black" background="#FFF"></navigation-bar>
+<elegant-bg></elegant-bg>
+<view class="quiz-page">
+  <view class="progress-wrap">
+    <view class="progress-bar">
+      <view class="progress-fill" style="width: {{progress}}%"></view>
+    </view>
+    <text class="progress-text">第 {{currentIndex + 1}} / {{questions.length}} 题</text>
+  </view>
+  <view class="question-area" wx:if="{{questions[currentIndex]}}">
+    <view class="question-card">
+      <text class="question-text">{{questions[currentIndex].text}}</text>
+    </view>
+    <view class="options-label">请选择最符合你的选项</view>
+    <view class="options">
+      <view
+        wx:for="{{questions[currentIndex].options}}"
+        wx:key="key"
+        class="option-card"
+        data-type="{{item.type}}"
+        bindtap="onSelect"
+      >
+        <text class="option-key">{{item.key}}</text>
+        <text class="option-text">{{item.text}}</text>
+      </view>
+    </view>
+  </view>
+</view>

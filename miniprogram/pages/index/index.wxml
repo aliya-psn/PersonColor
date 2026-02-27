@@ -1,0 +1,29 @@
+<navigation-bar title="人格底色测试" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<elegant-bg></elegant-bg>
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="container">
+    <view class="hero">
+      <text class="hero-title">人格底色测试</text>
+      <text class="hero-desc">从人生、情感、职场三个维度，发现最真实的你</text>
+    </view>
+    <view class="dimension-list">
+      <view
+        wx:for="{{dimensions}}"
+        wx:key="type"
+        class="dimension-item"
+        bindtap="onSelect"
+        data-type="{{item.type}}"
+      >
+        <image class="dimension-icon" src="{{item.icon}}" mode="aspectFit"></image>
+        <view class="dimension-content">
+          <text class="dimension-title">{{item.title}}</text>
+          <text class="dimension-desc">{{item.desc}}</text>
+        </view>
+        <text class="dimension-arrow">›</text>
+      </view>
+    </view>
+    <view class="footer-tip">
+      <text class="footer-text">10 道题 · 4 种人格底色 · 完整性格解析</text>
+    </view>
+  </view>
+</scroll-view>

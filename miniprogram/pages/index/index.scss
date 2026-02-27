@@ -1,0 +1,102 @@
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #fdf6eb;
+}
+
+.scrollarea {
+  flex: 1;
+  overflow-y: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  padding: 48rpx 28rpx 80rpx;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 56rpx;
+}
+
+.hero-title {
+  display: block;
+  font-size: 44rpx;
+  font-weight: 800;
+  color: #2c3e50;
+  margin-bottom: 16rpx;
+}
+
+.hero-desc {
+  display: block;
+  font-size: 28rpx;
+  color: #5a6c7d;
+  opacity: 0.95;
+  line-height: 1.5;
+}
+
+.dimension-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24rpx;
+}
+
+.dimension-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 680rpx;
+  padding: 40rpx 44rpx;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 28rpx;
+  box-shadow: 0 4rpx 20rpx rgba(44, 62, 80, 0.06);
+}
+
+.dimension-icon {
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 28rpx;
+  flex-shrink: 0;
+}
+
+.dimension-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.dimension-title {
+  font-size: 34rpx;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8rpx;
+}
+
+.dimension-desc {
+  font-size: 26rpx;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+.dimension-arrow {
+  font-size: 40rpx;
+  color: #88d9c5;
+  font-weight: 300;
+  margin-left: 16rpx;
+}
+
+.footer-tip {
+  margin-top: 48rpx;
+  padding: 24rpx 0;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 24rpx;
+  color: #5a6c7d;
+  opacity: 0.8;
+}

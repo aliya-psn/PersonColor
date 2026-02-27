@@ -1,0 +1,65 @@
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #fdf6eb;
+}
+
+.intro-page {
+  flex: 1;
+  position: relative;
+  overflow-y: auto;
+}
+
+.intro-content {
+  position: relative;
+  padding: 48rpx 40rpx 120rpx;
+  z-index: 1;
+}
+
+.intro-title {
+  display: block;
+  font-size: 44rpx;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 56rpx;
+  line-height: 1.4;
+}
+
+.intro-list {
+  margin-bottom: 64rpx;
+}
+
+.intro-item {
+  display: flex;
+  margin-bottom: 36rpx;
+}
+
+.intro-num {
+  flex-shrink: 0;
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #2c3e50;
+  line-height: 1.8;
+}
+
+.intro-text {
+  flex: 1;
+  font-size: 28rpx;
+  color: #333;
+  line-height: 1.8;
+}
+
+.intro-btn {
+  width: 100%;
+  height: 96rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #fff;
+  background: #2c3e50;
+  border-radius: 48rpx;
+  box-shadow: 0 8rpx 24rpx rgba(44, 62, 80, 0.35);
+}

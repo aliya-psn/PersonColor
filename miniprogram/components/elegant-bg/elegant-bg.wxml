@@ -1,0 +1,6 @@
+<view class="elegant-bg">
+  <view class="shape shape-coral"></view>
+  <view class="shape shape-teal"></view>
+  <view class="shape shape-yellow"></view>
+  <view class="shape shape-blue"></view>
+</view>

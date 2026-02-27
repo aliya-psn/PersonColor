@@ -1,0 +1,106 @@
+{
+  "type": "life",
+  "title": "人生底色",
+  "questions": [
+    {
+      "id": 1,
+      "text": "遇到压力大时，你更倾向？",
+      "options": [
+        { "key": "A", "text": "独自安静消化", "type": "serene" },
+        { "key": "B", "text": "找人倾诉安慰", "type": "warm" },
+        { "key": "C", "text": "换环境散心", "type": "free" },
+        { "key": "D", "text": "分析问题解决", "type": "rational" }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "你人生最看重的是？",
+      "options": [
+        { "key": "A", "text": "内心平静与真实", "type": "serene" },
+        { "key": "B", "text": "爱与被爱", "type": "warm" },
+        { "key": "C", "text": "自由与体验", "type": "free" },
+        { "key": "D", "text": "成就与价值", "type": "rational" }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "做重要决定时，你更依赖？",
+      "options": [
+        { "key": "A", "text": "直觉与内心感受", "type": "serene" },
+        { "key": "B", "text": "情感与他人建议", "type": "warm" },
+        { "key": "C", "text": "新鲜感与可能性", "type": "free" },
+        { "key": "D", "text": "逻辑与利弊", "type": "rational" }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "你理想的生活状态是？",
+      "options": [
+        { "key": "A", "text": "安稳有序、内心充实", "type": "serene" },
+        { "key": "B", "text": "温暖有人陪伴", "type": "warm" },
+        { "key": "C", "text": "不被束缚、随心而活", "type": "free" },
+        { "key": "D", "text": "不断进步、有目标", "type": "rational" }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "别人对你误解时，你通常？",
+      "options": [
+        { "key": "A", "text": "不想解释，默默承受", "type": "serene" },
+        { "key": "B", "text": "难过，希望被理解", "type": "warm" },
+        { "key": "C", "text": "无所谓，走自己的路", "type": "free" },
+        { "key": "D", "text": "理性说明，澄清事实", "type": "rational" }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "你更讨厌哪种状态？",
+      "options": [
+        { "key": "A", "text": "浮躁、内心不安", "type": "serene" },
+        { "key": "B", "text": "孤独、不被在乎", "type": "warm" },
+        { "key": "C", "text": "被控制、被安排", "type": "free" },
+        { "key": "D", "text": "混乱、无效率", "type": "rational" }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "你对「未来」的态度是？",
+      "options": [
+        { "key": "A", "text": "顺其自然，专注当下", "type": "serene" },
+        { "key": "B", "text": "希望充满爱与温暖", "type": "warm" },
+        { "key": "C", "text": "期待新鲜与变化", "type": "free" },
+        { "key": "D", "text": "规划清晰，稳步前进", "type": "rational" }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "你休息时更喜欢？",
+      "options": [
+        { "key": "A", "text": "独处、看书、思考", "type": "serene" },
+        { "key": "B", "text": "和家人朋友相处", "type": "warm" },
+        { "key": "C", "text": "出门探索、尝试新事物", "type": "free" },
+        { "key": "D", "text": "学习提升、整理规划", "type": "rational" }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "你认为自己最大的特质是？",
+      "options": [
+        { "key": "A", "text": "通透、有深度", "type": "serene" },
+        { "key": "B", "text": "善良、重感情", "type": "warm" },
+        { "key": "C", "text": "勇敢、不妥协", "type": "free" },
+        { "key": "D", "text": "理性、靠谱", "type": "rational" }
+      ]
+    },
+    {
+      "id": 10,
+      "text": "你一生最想成为的人？",
+      "options": [
+        { "key": "A", "text": "内心强大、清醒自洽", "type": "serene" },
+        { "key": "B", "text": "温柔有爱、被人信赖", "type": "warm" },
+        { "key": "C", "text": "自由热烈、忠于自己", "type": "free" },
+        { "key": "D", "text": "沉稳有力、有所成就", "type": "rational" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "type": "career",
+  "title": "职场底色",
+  "questions": [
+    {
+      "id": 1,
+      "text": "工作中你最在意？",
+      "options": [
+        { "key": "A", "text": "内心认可、价值感", "type": "serene" },
+        { "key": "B", "text": "团队氛围、人际关系", "type": "warm" },
+        { "key": "C", "text": "创造空间、自由度", "type": "free" },
+        { "key": "D", "text": "目标成果、效率收益", "type": "rational" }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "面对任务，你倾向？",
+      "options": [
+        { "key": "A", "text": "深思熟虑，稳步推进", "type": "serene" },
+        { "key": "B", "text": "配合团队，乐于协作", "type": "warm" },
+        { "key": "C", "text": "灵活创新，不按套路", "type": "free" },
+        { "key": "D", "text": "目标明确，高效执行", "type": "rational" }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "遇到困难工作，你会？",
+      "options": [
+        { "key": "A", "text": "冷静分析，找到本质", "type": "serene" },
+        { "key": "B", "text": "求助协作，一起解决", "type": "warm" },
+        { "key": "C", "text": "换思路，尝试新方法", "type": "free" },
+        { "key": "D", "text": "制定计划，强行攻克", "type": "rational" }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "你适合的工作环境是？",
+      "options": [
+        { "key": "A", "text": "安静专注、少干扰", "type": "serene" },
+        { "key": "B", "text": "和谐友善、氛围好", "type": "warm" },
+        { "key": "C", "text": "灵活自由、不刻板", "type": "free" },
+        { "key": "D", "text": "清晰规则、晋升明确", "type": "rational" }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "你对「成功」的定义是？",
+      "options": [
+        { "key": "A", "text": "做自己认可、有深度的事", "type": "serene" },
+        { "key": "B", "text": "被认可、被需要、人缘好", "type": "warm" },
+        { "key": "C", "text": "做热爱的事，不受限", "type": "free" },
+        { "key": "D", "text": "有成绩、有地位、有回报", "type": "rational" }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "领导安排不合理任务，你？",
+      "options": [
+        { "key": "A", "text": "先思考，再委婉提出", "type": "serene" },
+        { "key": "B", "text": "尽量配合，不想冲突", "type": "warm" },
+        { "key": "C", "text": "按自己方式灵活完成", "type": "free" },
+        { "key": "D", "text": "明确逻辑，提出优化", "type": "rational" }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "你更擅长？",
+      "options": [
+        { "key": "A", "text": "深度思考、总结规律", "type": "serene" },
+        { "key": "B", "text": "沟通协调、照顾他人", "type": "warm" },
+        { "key": "C", "text": "创意发散、开拓新思路", "type": "free" },
+        { "key": "D", "text": "统筹推进、拿到结果", "type": "rational" }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "职场中你最讨厌？",
+      "options": [
+        { "key": "A", "text": "浮躁形式、无意义内耗", "type": "serene" },
+        { "key": "B", "text": "勾心斗角、人情复杂", "type": "warm" },
+        { "key": "C", "text": "僵化死板、条条框框", "type": "free" },
+        { "key": "D", "text": "效率低下、目标混乱", "type": "rational" }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "压力下你会？",
+      "options": [
+        { "key": "A", "text": "沉下心，专注解决", "type": "serene" },
+        { "key": "B", "text": "寻求支持，调整情绪", "type": "warm" },
+        { "key": "C", "text": "暂时抽离，重新出发", "type": "free" },
+        { "key": "D", "text": "拆解问题，强行推进", "type": "rational" }
+      ]
+    },
+    {
+      "id": 10,
+      "text": "你职场核心竞争力是？",
+      "options": [
+        { "key": "A", "text": "洞察力强、看问题透彻", "type": "serene" },
+        { "key": "B", "text": "情商高、人缘好、会协作", "type": "warm" },
+        { "key": "C", "text": "敢创新、不设限、适应强", "type": "free" },
+        { "key": "D", "text": "执行力强、靠谱有结果", "type": "rational" }
+      ]
+    }
+  ]
+}

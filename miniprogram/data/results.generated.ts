@@ -1,0 +1,94 @@
+// 自动生成，请勿直接编辑。数据源: results.json
+// 运行 node scripts/gen-questions.js 重新生成
+
+export interface ResultInfo {
+  name: string
+  tagline: string
+  summary: string
+  tags: string[]
+  strengths: string
+  hiddenTalent: string
+  weakness: string
+  suggestions: string[]
+}
+
+export type ResultType = 'serene' | 'warm' | 'free' | 'rational'
+
+export const results = {
+  "serene": {
+    "name": "沉静守心型",
+    "tagline": "清醒、内省、深度、通透",
+    "summary": "内心强大、清醒自洽，专注内在成长与真实",
+    "tags": [
+      "清醒",
+      "内省",
+      "深度",
+      "通透"
+    ],
+    "strengths": "洞察力强、专注力高、情绪稳定",
+    "hiddenTalent": "看透本质、长期坚持、自愈力强",
+    "weakness": "可能过于内敛，不善于表达需求",
+    "suggestions": [
+      "多给自己独处时间",
+      "不必强迫合群",
+      "适度表达内心想法"
+    ]
+  },
+  "warm": {
+    "name": "温暖共情型",
+    "tagline": "温柔、感性、善良、重情",
+    "summary": "温柔有爱、被人信赖，擅长与人建立深度联结",
+    "tags": [
+      "温柔",
+      "感性",
+      "善良",
+      "重情"
+    ],
+    "strengths": "情商高、人缘好、善于照顾他人",
+    "hiddenTalent": "疗愈他人、感知情绪、凝聚人心",
+    "weakness": "可能过度付出，忽略自己的需求",
+    "suggestions": [
+      "先爱自己，再温暖世界",
+      "设定边界，避免过度共情",
+      "学会说「不」"
+    ]
+  },
+  "free": {
+    "name": "自由旷野型",
+    "tagline": "独立、勇敢、创造、不妥协",
+    "summary": "自由热烈、忠于自己，敢于突破常规",
+    "tags": [
+      "独立",
+      "勇敢",
+      "创造",
+      "不妥协"
+    ],
+    "strengths": "创造力强、敢尝试、适应力强",
+    "hiddenTalent": "破局能力、开拓思维、不受束缚",
+    "weakness": "可能过于追求自由，难以坚持",
+    "suggestions": [
+      "保持热爱，不必被世俗规训",
+      "在自由与责任间找到平衡",
+      "选定方向后坚持深耕"
+    ]
+  },
+  "rational": {
+    "name": "理性掌控型",
+    "tagline": "冷静、逻辑、目标、执行力",
+    "summary": "沉稳有力、有所成就，擅长规划与执行",
+    "tags": [
+      "冷静",
+      "逻辑",
+      "目标",
+      "执行力"
+    ],
+    "strengths": "靠谱、高效、抗压、有担当",
+    "hiddenTalent": "统筹规划、解决问题、带队成事",
+    "weakness": "可能过于追求完美，忽视情感需求",
+    "suggestions": [
+      "偶尔放松，允许事情不完美",
+      "关注身边人的情感需求",
+      "适当放下控制感"
+    ]
+  }
+}

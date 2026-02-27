@@ -1,0 +1,21 @@
+<navigation-bar title="测试结果" back="{{true}}" color="black" background="#FFF"></navigation-bar>
+<elegant-bg></elegant-bg>
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="container" wx:if="{{resultInfo}}">
+    <view class="section-header">
+      <text class="section-title">你的底色</text>
+    </view>
+    <view class="result-card">
+      <text class="result-name">{{resultInfo.name}}</text>
+      <text class="result-summary">{{resultInfo.summary}}</text>
+    </view>
+    <view class="section-header">
+      <text class="section-title">解锁完整报告</text>
+    </view>
+    <view class="unlock-tip">
+      <text class="unlock-desc">完整性格解析、优势天赋、弱点与雷区、生活/情感/职场建议</text>
+      <view class="unlock-btn" catchtap="goToReport">看广告免费解锁</view>
+    </view>
+    <button class="share-btn" open-type="share">分享给好友</button>
+  </view>
+</scroll-view>

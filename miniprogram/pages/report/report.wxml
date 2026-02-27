@@ -1,0 +1,46 @@
+<navigation-bar title="完整报告" back="{{true}}" color="black" background="#FFF"></navigation-bar>
+<elegant-bg></elegant-bg>
+<scroll-view class="scrollarea" scroll-y>
+  <view class="report-page" wx:if="{{resultInfo}}">
+    <view class="hero-wrap">
+      <view class="hero-shape"></view>
+      <view class="hero-avatar">
+        <image class="avatar-img" src="{{userAvatar}}" mode="aspectFill"></image>
+      </view>
+      <text class="hero-nickname">{{userNickname}}</text>
+    </view>
+    <view class="content-card">
+      <view class="label-box">人格底色</view>
+      <text class="type-name">{{resultInfo.name}}</text>
+      <text class="type-tagline">{{resultInfo.tagline}}</text>
+    </view>
+    <view class="content-card">
+      <view class="label-box">人格类型</view>
+      <view class="point-list">
+        <view class="point-item">
+          <view class="point-num">1</view>
+          <text class="point-text">{{resultInfo.summary}}</text>
+        </view>
+        <view class="point-item">
+          <view class="point-num">2</view>
+          <text class="point-text">{{resultInfo.strengths}}</text>
+        </view>
+        <view class="point-item">
+          <view class="point-num">3</view>
+          <text class="point-text">{{resultInfo.hiddenTalent}}；{{resultInfo.weakness}}</text>
+        </view>
+        <view class="point-item">
+          <view class="point-num">4</view>
+          <text class="point-text">{{suggestionsStr}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="btn-area">
+      <button class="btn-share" open-type="share">分享报告</button>
+      <view class="btn-row">
+        <view class="btn-primary" bindtap="onGenerateImage">生成图片</view>
+        <view class="btn-secondary" bindtap="onTestAgain">再测一次</view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

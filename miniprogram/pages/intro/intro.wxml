@@ -1,0 +1,26 @@
+<navigation-bar title="测试须知" back="{{true}}" color="black" background="#FFF"></navigation-bar>
+<elegant-bg></elegant-bg>
+<scroll-view class="intro-page" scroll-y>
+  <view class="intro-content">
+    <text class="intro-title">人格底色测试须知</text>
+    <view class="intro-list">
+      <view class="intro-item">
+        <text class="intro-num">1、</text>
+        <text class="intro-text">请务必诚实、独立地回答问题，只有如此，才能得到有效的结果。</text>
+      </view>
+      <view class="intro-item">
+        <text class="intro-num">2、</text>
+        <text class="intro-text">报告展示的是你的性格倾向，而不是你的知识、技能或经验。</text>
+      </view>
+      <view class="intro-item">
+        <text class="intro-num">3、</text>
+        <text class="intro-text">四种人格底色没有好坏之分，了解自己的优势与短板，有助于更好的自我认知与人际互动。</text>
+      </view>
+      <view class="intro-item">
+        <text class="intro-num">4、</text>
+        <text class="intro-text">共 10 道题，每题选择最符合你的选项，没有对错答案。</text>
+      </view>
+    </view>
+    <view class="intro-btn" bindtap="onEnter">进入测试 ›</view>
+  </view>
+</scroll-view>
