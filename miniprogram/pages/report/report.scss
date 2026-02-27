@@ -13,8 +13,35 @@ page {
 }
 
 .report-page {
+  position: relative;
   padding: 0 32rpx 120rpx;
   min-height: 100%;
+}
+
+.share-icon {
+  position: absolute;
+  top: 16rpx;
+  right: 32rpx;
+  width: 64rpx;
+  height: 64rpx;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6rpx 18rpx rgba(15, 23, 42, 0.15);
+}
+
+.share-icon::after {
+  border: none;
+}
+
+.share-icon-img {
+  width: 40rpx;
+  height: 40rpx;
 }
 
 .hero-wrap {
@@ -95,6 +122,21 @@ page {
   line-height: 1.5;
 }
 
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12rpx;
+  margin-bottom: 28rpx;
+}
+
+.tag-item {
+  padding: 8rpx 18rpx;
+  font-size: 22rpx;
+  color: #1e3a5f;
+  background: rgba(148, 163, 184, 0.12);
+  border-radius: 999rpx;
+}
+
 .point-list {
   display: flex;
   flex-direction: column;
@@ -123,6 +165,39 @@ page {
 .point-text {
   flex: 1;
   font-size: 28rpx;
+  color: #475569;
+  line-height: 1.8;
+}
+
+.point-label {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.suggest-list {
+  margin-top: 8rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 8rpx;
+}
+
+.suggest-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.suggest-dot {
+  width: 10rpx;
+  height: 10rpx;
+  margin-top: 14rpx;
+  margin-right: 12rpx;
+  border-radius: 50%;
+  background: #f472b6;
+}
+
+.suggest-text {
+  flex: 1;
+  font-size: 26rpx;
   color: #475569;
   line-height: 1.8;
 }

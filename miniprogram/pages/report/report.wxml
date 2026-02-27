@@ -16,27 +16,52 @@
     </view>
     <view class="content-card">
       <view class="label-box">人格类型</view>
+      <view class="tag-list">
+        <view class="tag-item" wx:for="{{resultInfo.tags}}" wx:key="*this">
+          {{item}}
+        </view>
+      </view>
       <view class="point-list">
         <view class="point-item">
           <view class="point-num">1</view>
-          <text class="point-text">{{resultInfo.summary}}</text>
+          <text class="point-text">
+            <text class="point-label">整体气质：</text>
+            {{resultInfo.summary}}
+          </text>
         </view>
         <view class="point-item">
           <view class="point-num">2</view>
-          <text class="point-text">{{resultInfo.strengths}}</text>
+          <text class="point-text">
+            <text class="point-label">核心优势：</text>
+            {{resultInfo.strengths}}
+          </text>
         </view>
         <view class="point-item">
           <view class="point-num">3</view>
-          <text class="point-text">{{resultInfo.hiddenTalent}}；{{resultInfo.weakness}}</text>
+          <text class="point-text">
+            <text class="point-label">隐藏天赋 & 雷区：</text>
+            {{resultInfo.hiddenTalent}}；{{resultInfo.weakness}}
+          </text>
         </view>
         <view class="point-item">
           <view class="point-num">4</view>
-          <text class="point-text">{{suggestionsStr}}</text>
+          <view class="point-text">
+            <text class="point-label">行动建议：</text>
+            <view class="suggest-list">
+              <view
+                class="suggest-item"
+                wx:for="{{resultInfo.suggestions}}"
+                wx:key="*this"
+              >
+                <view class="suggest-dot"></view>
+                <text class="suggest-text">{{item}}</text>
+              </view>
+            </view>
+          </view>
         </view>
       </view>
     </view>
     <view class="btn-area">
-      <button class="btn-share" open-type="share">分享报告</button>
       <view class="btn-row">
         <view class="btn-primary" bindtap="onGenerateImage">生成图片</view>
         <view class="btn-secondary" bindtap="onTestAgain">再测一次</view>

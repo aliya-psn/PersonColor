@@ -1,7 +1,7 @@
 // 完整报告页
 import { results, type ResultType } from '../../data/results'
 
-const defaultAvatar = 'https://mmbiz.qpic.cn/mmbiz/icTdbqWNOwNRna42FI242Lcia07jQodd2FJGIYQfG0LAJGFxM4FbnQP6yfMxBgJ0F3YRqJCJ1aPAK2dQagdusBZg/0'
+const defaultAvatar = '/images/default-avatar.svg'
 
 Page({
   data: {

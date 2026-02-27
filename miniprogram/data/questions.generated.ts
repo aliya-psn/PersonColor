@@ -22,7 +22,7 @@ export interface QuestionSet {
 export const questionSets = {
   life: {
   "type": "life",
-  "title": "人生底色",
+  "title": "人格底色",
   "questions": [
     {
       "id": 1,
