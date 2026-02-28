@@ -3,18 +3,21 @@
 <scroll-view class="scrollarea" scroll-y type="list">
   <view class="container">
     <view class="hero">
-      <text class="hero-title">人格底色测试</text>
-      <text class="hero-desc">从人生、情感、职场三个维度，发现最真实的你</text>
+      <text class="hero-label">发现最真实的你</text>
+      <text class="hero-title">人格底色</text>
+      <text class="hero-desc">人生 · 情感 · 职场，三个维度读懂你的底色</text>
     </view>
     <view class="dimension-list">
       <view
         wx:for="{{dimensions}}"
         wx:key="type"
-        class="dimension-item"
+        class="dimension-item dimension-item-{{item.type}}"
         bindtap="onSelect"
         data-type="{{item.type}}"
       >
-        <image class="dimension-icon" src="{{item.icon}}" mode="aspectFit"></image>
+        <view class="dimension-icon-wrap">
+          <image class="dimension-icon" src="{{item.icon}}" mode="aspectFit"></image>
+        </view>
         <view class="dimension-content">
           <text class="dimension-title">{{item.title}}</text>
           <text class="dimension-desc">{{item.desc}}</text>

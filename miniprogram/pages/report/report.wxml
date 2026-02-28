@@ -2,14 +2,11 @@
 <elegant-bg></elegant-bg>
 <scroll-view class="scrollarea" scroll-y>
   <view class="report-page" wx:if="{{resultInfo}}">
-    <view class="hero-wrap">
-      <view class="hero-shape"></view>
-      <view class="hero-avatar">
-        <image class="avatar-img" src="{{userAvatar}}" mode="aspectFill"></image>
-      </view>
-      <text class="hero-nickname">{{userNickname}}</text>
-    </view>
     <view class="content-card">
+      <view class="card-user">
+        <image class="card-user-avatar" src="{{userAvatar}}" mode="aspectFill"></image>
+        <text class="card-user-nickname">{{userNickname}}</text>
+      </view>
       <view class="label-box">人格底色</view>
       <text class="type-name">{{resultInfo.name}}</text>
       <text class="type-tagline">{{resultInfo.tagline}}</text>
@@ -59,6 +56,15 @@
             </view>
           </view>
         </view>
+      </view>
+    </view>
+    <view class="content-card radar-card" wx:if="{{radarTitle}}">
+      <view class="label-box">{{radarTitle}}</view>
+      <view class="radar-wrap" wx:if="{{radarScores && radarScores.length === 4}}">
+        <canvas canvas-id="radarCanvas" id="radar-canvas" class="radar-canvas" style="width: 560rpx; height: 560rpx;"></canvas>
+      </view>
+      <view class="radar-placeholder" wx:else>
+        <text class="radar-placeholder-text">完成「{{radarTitle}}」测试后此处将显示雷达图</text>
       </view>
     </view>
     <view class="btn-area">

@@ -44,46 +44,33 @@ page {
   height: 40rpx;
 }
 
-.hero-wrap {
-  position: relative;
-  padding-top: 60rpx;
-  padding-bottom: 48rpx;
-}
-
-.hero-shape {
+/* 第一个 content-card 内右上角用户信息 */
+.card-user {
   position: absolute;
-  top: -40rpx;
-  right: -80rpx;
-  width: 400rpx;
-  height: 320rpx;
-  background: linear-gradient(135deg, #fbcfe8 0%, #f9a8d4 50%, #f472b6 100%);
-  border-radius: 50% 50% 0 50%;
-  opacity: 0.9;
+  top: 24rpx;
+  right: 24rpx;
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
 }
 
-.hero-avatar {
-  position: relative;
-  width: 140rpx;
-  height: 140rpx;
-  margin: 0 auto 24rpx;
+.card-user-avatar {
+  width: 56rpx;
+  height: 56rpx;
   border-radius: 50%;
-  overflow: hidden;
-  border: 6rpx solid #fff;
-  box-shadow: 0 8rpx 24rpx rgba(0, 0, 0, 0.1);
-}
-
-.avatar-img {
-  width: 100%;
-  height: 100%;
   background: #e8e4de;
+  border: 2rpx solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.08);
 }
 
-.hero-nickname {
-  display: block;
-  text-align: center;
-  font-size: 32rpx;
-  font-weight: 600;
-  color: #333;
+.card-user-nickname {
+  max-width: 160rpx;
+  font-size: 22rpx;
+  font-weight: 500;
+  color: #64748b;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .content-card {
@@ -157,7 +144,7 @@ page {
   font-size: 26rpx;
   font-weight: 700;
   color: #fff;
-  background: #f472b6;
+  background: #c97a65;
   border-radius: 50%;
   margin-right: 24rpx;
 }
@@ -192,7 +179,7 @@ page {
   margin-top: 14rpx;
   margin-right: 12rpx;
   border-radius: 50%;
-  background: #f472b6;
+  background: #c97a65;
 }
 
 .suggest-text {
@@ -215,9 +202,9 @@ page {
   font-weight: 600;
   letter-spacing: 2rpx;
   color: #fff;
-  background: linear-gradient(135deg, #f472b6 0%, #ec4899 100%);
+  background: linear-gradient(135deg, #e8a090 0%, #c97a65 100%);
   border-radius: 48rpx;
-  box-shadow: 0 8rpx 24rpx rgba(244, 114, 182, 0.35);
+  box-shadow: 0 8rpx 24rpx rgba(201, 122, 101, 0.35);
 }
 
 .btn-row {
@@ -234,9 +221,9 @@ page {
   font-size: 32rpx;
   font-weight: 600;
   color: #fff;
-  background: linear-gradient(135deg, #f472b6 0%, #ec4899 100%);
+  background: linear-gradient(135deg, #e8a090 0%, #c97a65 100%);
   border-radius: 48rpx;
-  box-shadow: 0 8rpx 24rpx rgba(244, 114, 182, 0.35);
+  box-shadow: 0 8rpx 24rpx rgba(201, 122, 101, 0.35);
 }
 
 .btn-secondary {
@@ -251,4 +238,31 @@ page {
   background: #1e3a5f;
   border-radius: 48rpx;
   box-shadow: 0 8rpx 24rpx rgba(30, 58, 95, 0.3);
+}
+
+.radar-card .label-box {
+  margin-bottom: 24rpx;
+}
+
+.radar-wrap {
+  width: 560rpx;
+  height: 560rpx;
+  margin: 0 auto;
+}
+
+.radar-wrap .radar-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.radar-placeholder {
+  padding: 80rpx 24rpx;
+  text-align: center;
+}
+
+.radar-placeholder-text {
+  font-size: 26rpx;
+  color: #94a3b8;
+  line-height: 1.6;
 }

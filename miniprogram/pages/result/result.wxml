@@ -2,20 +2,60 @@
 <elegant-bg></elegant-bg>
 <scroll-view class="scrollarea" scroll-y type="list">
   <view class="container" wx:if="{{resultInfo}}">
-    <view class="section-header">
-      <text class="section-title">你的底色</text>
+    <view class="hero">
+      <view class="hero-top">
+        <view class="hero-badge">你的底色</view>
+        <view class="hero-tag">已生成</view>
+      </view>
+      <view class="result-card">
+        <text class="result-name">{{resultInfo.name}}</text>
+        <text class="result-summary">{{resultInfo.summary}}</text>
+        <view class="result-divider"></view>
+        <view class="result-actions">
+          <view
+            class="primary-cta"
+            catchtap="goToReport"
+            hover-class="primary-cta--hover"
+            hover-stay-time="80"
+          >
+            <view class="cta-text-wrap">
+              <text class="cta-title">查看完整报告</text>
+              <text class="cta-sub">限时免费</text>
+            </view>
+            <text class="cta-chevron">›</text>
+          </view>
+        </view>
+      </view>
     </view>
-    <view class="result-card">
-      <text class="result-name">{{resultInfo.name}}</text>
-      <text class="result-summary">{{resultInfo.summary}}</text>
-    </view>
     <view class="section-header">
-      <text class="section-title">解锁完整报告</text>
+      <text class="section-title">完整报告你将获得</text>
     </view>
     <view class="unlock-tip">
-      <text class="unlock-desc">完整性格解析、优势天赋、弱点与雷区、生活/情感/职场建议</text>
-      <view class="unlock-btn" catchtap="goToReport">看广告免费解锁</view>
+      <view class="unlock-list">
+        <view class="unlock-item">
+          <view class="dot"></view>
+          <text class="unlock-desc">完整性格解析与核心驱动</text>
+        </view>
+        <view class="unlock-item">
+          <view class="dot"></view>
+          <text class="unlock-desc">优势天赋、弱点与雷区</text>
+        </view>
+        <view class="unlock-item">
+          <view class="dot"></view>
+          <text class="unlock-desc">生活 / 情感 / 职场建议与行动清单</text>
+        </view>
+      </view>
+      <view
+        class="unlock-btn"
+        catchtap="goToReport"
+        hover-class="unlock-btn--hover"
+        hover-stay-time="80"
+      >
+        立即查看
+      </view>
     </view>
-    <button class="share-btn" open-type="share">分享给好友</button>
+    <button class="share-btn" open-type="share" hover-class="share-btn--hover" hover-stay-time="80">
+      分享给好友
+    </button>
   </view>
 </scroll-view>

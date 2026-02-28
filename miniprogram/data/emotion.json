@@ -2,105 +2,15 @@
   "type": "emotion",
   "title": "情感底色",
   "questions": [
-    {
-      "id": 1,
-      "text": "你在感情里最需要？",
-      "options": [
-        { "key": "A", "text": "安全感与理解", "type": "serene" },
-        { "key": "B", "text": "陪伴与偏爱", "type": "warm" },
-        { "key": "C", "text": "空间与尊重", "type": "free" },
-        { "key": "D", "text": "稳定与靠谱", "type": "rational" }
-      ]
-    },
-    {
-      "id": 2,
-      "text": "喜欢一个人时，你会？",
-      "options": [
-        { "key": "A", "text": "默默关注，慢慢靠近", "type": "serene" },
-        { "key": "B", "text": "主动关心，温柔付出", "type": "warm" },
-        { "key": "C", "text": "大胆表达，跟随感觉", "type": "free" },
-        { "key": "D", "text": "观察评估，认真对待", "type": "rational" }
-      ]
-    },
-    {
-      "id": 3,
-      "text": "吵架后你通常？",
-      "options": [
-        { "key": "A", "text": "冷静思考，等情绪过去", "type": "serene" },
-        { "key": "B", "text": "希望先和好，再沟通", "type": "warm" },
-        { "key": "C", "text": "想独处，不想被逼迫", "type": "free" },
-        { "key": "D", "text": "理性复盘，解决问题", "type": "rational" }
-      ]
-    },
-    {
-      "id": 4,
-      "text": "你心中理想的关系是？",
-      "options": [
-        { "key": "A", "text": "灵魂契合，彼此懂对方", "type": "serene" },
-        { "key": "B", "text": "温暖甜蜜，互相照顾", "type": "warm" },
-        { "key": "C", "text": "轻松自由，不束缚彼此", "type": "free" },
-        { "key": "D", "text": "稳定踏实，共同成长", "type": "rational" }
-      ]
-    },
-    {
-      "id": 5,
-      "text": "对方忽略你时，你会？",
-      "options": [
-        { "key": "A", "text": "内心敏感，默默难过", "type": "serene" },
-        { "key": "B", "text": "直接表达，希望被重视", "type": "warm" },
-        { "key": "C", "text": "假装不在意，保持体面", "type": "free" },
-        { "key": "D", "text": "分析原因，理性沟通", "type": "rational" }
-      ]
-    },
-    {
-      "id": 6,
-      "text": "你在感情中最害怕？",
-      "options": [
-        { "key": "A", "text": "不被理解，精神孤独", "type": "serene" },
-        { "key": "B", "text": "被辜负、付出不值得", "type": "warm" },
-        { "key": "C", "text": "失去自我，变得妥协", "type": "free" },
-        { "key": "D", "text": "不稳定，充满变数", "type": "rational" }
-      ]
-    },
-    {
-      "id": 7,
-      "text": "你表达爱的方式是？",
-      "options": [
-        { "key": "A", "text": "用心陪伴，默默支持", "type": "serene" },
-        { "key": "B", "text": "温柔体贴，细节照顾", "type": "warm" },
-        { "key": "C", "text": "给对方空间与自由", "type": "free" },
-        { "key": "D", "text": "承担责任，解决问题", "type": "rational" }
-      ]
-    },
-    {
-      "id": 8,
-      "text": "选择伴侣你更看重？",
-      "options": [
-        { "key": "A", "text": "三观契合、内心成熟", "type": "serene" },
-        { "key": "B", "text": "温柔善良、情绪稳定", "type": "warm" },
-        { "key": "C", "text": "有趣独立、有个性", "type": "free" },
-        { "key": "D", "text": "靠谱上进、有担当", "type": "rational" }
-      ]
-    },
-    {
-      "id": 9,
-      "text": "感情变淡时你会？",
-      "options": [
-        { "key": "A", "text": "内心失落，不愿放弃", "type": "serene" },
-        { "key": "B", "text": "主动挽回，珍惜感情", "type": "warm" },
-        { "key": "C", "text": "接受现实，体面离开", "type": "free" },
-        { "key": "D", "text": "冷静分析，尝试修复", "type": "rational" }
-      ]
-    },
-    {
-      "id": 10,
-      "text": "你在感情里的底色是？",
-      "options": [
-        { "key": "A", "text": "深情且克制", "type": "serene" },
-        { "key": "B", "text": "热烈且真诚", "type": "warm" },
-        { "key": "C", "text": "自由且独立", "type": "free" },
-        { "key": "D", "text": "理性且负责", "type": "rational" }
-      ]
-    }
+    {"id": 1, "text": "在感情里，你最怕对方给你什么感觉？", "options": [{"key": "A", "text": "人在心不在，精神上从不真正靠近", "type": "safe"}, {"key": "B", "text": "忽冷忽热，让我总在猜", "type": "anxious"}, {"key": "C", "text": "黏得太紧，让我喘不过气", "type": "avoidant"}, {"key": "D", "text": "说变就变，没有安全感", "type": "fearful"}]},
+    {"id": 2, "text": "喜欢一个人时，你通常会？", "options": [{"key": "A", "text": "慢慢了解，顺其自然在一起", "type": "safe"}, {"key": "B", "text": "忍不住主动，想马上确认对方心意", "type": "anxious"}, {"key": "C", "text": "保持距离，先观察再说", "type": "avoidant"}, {"key": "D", "text": "既想靠近又怕受伤，反复试探", "type": "fearful"}]},
+    {"id": 3, "text": "吵完架，你更常？", "options": [{"key": "A", "text": "冷静下来再谈，不翻旧账", "type": "safe"}, {"key": "B", "text": "想赶紧和好，受不了冷战", "type": "anxious"}, {"key": "C", "text": "需要独处，别逼我马上聊", "type": "avoidant"}, {"key": "D", "text": "怕对方不爱了，又怕自己太依赖", "type": "fearful"}]},
+    {"id": 4, "text": "你心中理想的关系更像？", "options": [{"key": "A", "text": "彼此信任，既能亲密也能独立", "type": "safe"}, {"key": "B", "text": "被需要、被偏爱、被放在第一位", "type": "anxious"}, {"key": "C", "text": "有空间、不绑架、不道德绑架", "type": "avoidant"}, {"key": "D", "text": "既渴望深度亲密，又怕失去自己", "type": "fearful"}]},
+    {"id": 5, "text": "对方半天不回消息，你第一反应？", "options": [{"key": "A", "text": "可能在忙，等会儿再说", "type": "safe"}, {"key": "B", "text": "开始乱想：是不是不在乎我了", "type": "anxious"}, {"key": "C", "text": "正好，我也需要自己的时间", "type": "avoidant"}, {"key": "D", "text": "想追问又怕显得太黏人", "type": "fearful"}]},
+    {"id": 6, "text": "在感情里你最怕？", "options": [{"key": "A", "text": "从没真正被理解过", "type": "safe"}, {"key": "B", "text": "付出一切却被辜负", "type": "anxious"}, {"key": "C", "text": "失去自我、为对方活", "type": "avoidant"}, {"key": "D", "text": "既怕被抛弃，又怕被吞没", "type": "fearful"}]},
+    {"id": 7, "text": "你表达爱的方式更接近？", "options": [{"key": "A", "text": "稳定陪伴，需要时在", "type": "safe"}, {"key": "B", "text": "细节拉满，恨不得把心掏出来", "type": "anxious"}, {"key": "C", "text": "给足空间，不缠着", "type": "avoidant"}, {"key": "D", "text": "有时很热有时想逃", "type": "fearful"}]},
+    {"id": 8, "text": "选伴侣你最看重？", "options": [{"key": "A", "text": "情绪成熟、能沟通", "type": "safe"}, {"key": "B", "text": "能给我足够的安全感和确认感", "type": "anxious"}, {"key": "C", "text": "尊重边界、不黏人", "type": "avoidant"}, {"key": "D", "text": "能接住我的矛盾和不安全感", "type": "fearful"}]},
+    {"id": 9, "text": "感情变淡时，你更会？", "options": [{"key": "A", "text": "一起找原因，能修就修", "type": "safe"}, {"key": "B", "text": "拼命挽回，不想放手", "type": "anxious"}, {"key": "C", "text": "接受结果，体面离开", "type": "avoidant"}, {"key": "D", "text": "又舍不得又怕继续受伤", "type": "fearful"}]},
+    {"id": 10, "text": "你在感情里的底色更像？", "options": [{"key": "A", "text": "信任、稳定、不折腾", "type": "safe"}, {"key": "B", "text": "热烈、黏人、怕被丢下", "type": "anxious"}, {"key": "C", "text": "独立、要空间、怕被吞没", "type": "avoidant"}, {"key": "D", "text": "渴望爱又怕受伤，进退两难", "type": "fearful"}]}
   ]
 }

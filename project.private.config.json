@@ -16,7 +16,8 @@
     "compileHotReLoad": true,
     "bigPackageSizeSupport": false,
     "checkInvalidKey": true,
-    "ignoreDevUnusedFiles": true
+    "ignoreDevUnusedFiles": true,
+    "useApiHostProcess": true
   },
   "condition": {}
 }

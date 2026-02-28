@@ -2,43 +2,75 @@ page {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background: #fdf6eb;
+  background: linear-gradient(180deg, #fdf6eb 0%, #fbefe3 55%, #f8eadf 100%);
 }
 
 .quiz-page {
   flex: 1;
   padding: 40rpx 36rpx;
+  padding-bottom: calc(40rpx + env(safe-area-inset-bottom));
   display: flex;
   flex-direction: column;
   position: relative;
   z-index: 1;
 }
 
+.quiz-header {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1rpx solid rgba(201, 122, 101, 0.16);
+  border-radius: 32rpx;
+  padding: 26rpx 26rpx 22rpx;
+  box-shadow: 0 10rpx 30rpx rgba(168, 107, 74, 0.14);
+  margin-bottom: 34rpx;
+}
+
+.quiz-header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18rpx;
+}
+
+.quiz-badge {
+  padding: 10rpx 18rpx;
+  border-radius: 999rpx;
+  font-size: 22rpx;
+  color: #7a452c;
+  background: linear-gradient(135deg, rgba(232, 160, 144, 0.28) 0%, rgba(201, 122, 101, 0.18) 100%);
+  border: 1rpx solid rgba(201, 122, 101, 0.18);
+}
+
+.quiz-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 14rpx;
+}
+
 .progress-bar {
   height: 12rpx;
-  background: #fce7f3;
+  background: #f0ddd0;
   border-radius: 6rpx;
   overflow: hidden;
-  margin-bottom: 16rpx;
 }
 
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #f9a8d4 0%, #f472b6 100%);
+  background: linear-gradient(90deg, #e8a090 0%, #c97a65 100%);
   border-radius: 6rpx;
   transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.progress-wrap {
-  margin-bottom: 40rpx;
+.progress-text {
+  font-size: 26rpx;
+  color: #a86b4a;
+  opacity: 0.92;
 }
 
-.progress-text {
-  display: block;
-  font-size: 26rpx;
-  color: #9d174d;
-  opacity: 0.9;
-  margin-top: 12rpx;
+.progress-percent {
+  font-size: 30rpx;
+  font-weight: 800;
+  letter-spacing: 0.5rpx;
+  color: #7a452c;
 }
 
 .question-area {
@@ -50,22 +82,45 @@ page {
   border-radius: 28rpx;
   padding: 40rpx;
   margin-bottom: 32rpx;
-  box-shadow: 0 4rpx 20rpx rgba(244, 114, 182, 0.08);
+  border: 1rpx solid rgba(201, 122, 101, 0.14);
+  box-shadow: 0 10rpx 26rpx rgba(168, 107, 74, 0.12);
+  animation: fadeUp 280ms cubic-bezier(0.2, 0.9, 0.2, 1);
+}
+
+.question-kicker {
+  display: inline-block;
+  margin-bottom: 14rpx;
+  font-size: 22rpx;
+  font-weight: 800;
+  color: #c97a65;
+  padding: 8rpx 14rpx;
+  border-radius: 14rpx;
+  background: rgba(245, 221, 208, 0.65);
 }
 
 .question-text {
   display: block;
   font-size: 36rpx;
   font-weight: 700;
-  color: #333;
+  color: #3d3630;
   line-height: 1.6;
+}
+
+.options-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24rpx;
 }
 
 .options-label {
   font-size: 26rpx;
-  color: #9d174d;
-  opacity: 0.9;
-  margin-bottom: 24rpx;
+  color: #a86b4a;
+}
+
+.options-hint {
+  font-size: 24rpx;
+  color: rgba(168, 107, 74, 0.75);
 }
 
 .options {
@@ -80,26 +135,58 @@ page {
   padding: 36rpx 40rpx;
   background: #fff;
   border-radius: 28rpx;
-  box-shadow: 0 4rpx 16rpx rgba(244, 114, 182, 0.08);
+  border: 1rpx solid rgba(201, 122, 101, 0.14);
+  box-shadow: 0 10rpx 24rpx rgba(168, 107, 74, 0.11);
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+  animation: fadeUp 320ms cubic-bezier(0.2, 0.9, 0.2, 1);
+}
+
+.option-card--hover {
+  transform: translateY(-4rpx);
+  border-color: rgba(201, 122, 101, 0.28);
+  box-shadow: 0 16rpx 34rpx rgba(168, 107, 74, 0.16);
+}
+
+.option-key-wrap {
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(232, 160, 144, 0.18) 0%, rgba(201, 122, 101, 0.10) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 26rpx;
+  border: 1rpx solid rgba(201, 122, 101, 0.16);
 }
 
 .option-key {
-  width: 64rpx;
-  height: 64rpx;
-  line-height: 64rpx;
-  text-align: center;
   font-size: 28rpx;
   font-weight: 700;
-  color: #be185d;
-  background: #fdf2f8;
-  border-radius: 50%;
-  margin-right: 28rpx;
+  color: #c97a65;
 }
 
 .option-text {
   flex: 1;
   font-size: 30rpx;
-  color: #333;
+  color: #3d3630;
   line-height: 1.5;
   font-weight: 500;
+}
+
+.option-chevron {
+  margin-left: 14rpx;
+  font-size: 36rpx;
+  line-height: 1;
+  color: rgba(168, 107, 74, 0.45);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12rpx);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

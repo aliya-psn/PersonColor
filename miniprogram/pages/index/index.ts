@@ -5,7 +5,7 @@ Component({
   },
   data: {
     dimensions: [
-      { type: 'life', title: '人格底色', desc: '你的人生观与生活态度', icon: '/images/icon-life.svg' },
+      { type: 'life', title: '人生底色', desc: '你的人生观与生活态度', icon: '/images/icon-life.svg' },
       { type: 'emotion', title: '情感底色', desc: '你在感情中的真实模样', icon: '/images/icon-emotion.svg' },
       { type: 'career', title: '职场底色', desc: '你的工作风格与优势', icon: '/images/icon-career.svg' },
     ],

@@ -2,105 +2,15 @@
   "type": "career",
   "title": "职场底色",
   "questions": [
-    {
-      "id": 1,
-      "text": "工作中你最在意？",
-      "options": [
-        { "key": "A", "text": "内心认可、价值感", "type": "serene" },
-        { "key": "B", "text": "团队氛围、人际关系", "type": "warm" },
-        { "key": "C", "text": "创造空间、自由度", "type": "free" },
-        { "key": "D", "text": "目标成果、效率收益", "type": "rational" }
-      ]
-    },
-    {
-      "id": 2,
-      "text": "面对任务，你倾向？",
-      "options": [
-        { "key": "A", "text": "深思熟虑，稳步推进", "type": "serene" },
-        { "key": "B", "text": "配合团队，乐于协作", "type": "warm" },
-        { "key": "C", "text": "灵活创新，不按套路", "type": "free" },
-        { "key": "D", "text": "目标明确，高效执行", "type": "rational" }
-      ]
-    },
-    {
-      "id": 3,
-      "text": "遇到困难工作，你会？",
-      "options": [
-        { "key": "A", "text": "冷静分析，找到本质", "type": "serene" },
-        { "key": "B", "text": "求助协作，一起解决", "type": "warm" },
-        { "key": "C", "text": "换思路，尝试新方法", "type": "free" },
-        { "key": "D", "text": "制定计划，强行攻克", "type": "rational" }
-      ]
-    },
-    {
-      "id": 4,
-      "text": "你适合的工作环境是？",
-      "options": [
-        { "key": "A", "text": "安静专注、少干扰", "type": "serene" },
-        { "key": "B", "text": "和谐友善、氛围好", "type": "warm" },
-        { "key": "C", "text": "灵活自由、不刻板", "type": "free" },
-        { "key": "D", "text": "清晰规则、晋升明确", "type": "rational" }
-      ]
-    },
-    {
-      "id": 5,
-      "text": "你对「成功」的定义是？",
-      "options": [
-        { "key": "A", "text": "做自己认可、有深度的事", "type": "serene" },
-        { "key": "B", "text": "被认可、被需要、人缘好", "type": "warm" },
-        { "key": "C", "text": "做热爱的事，不受限", "type": "free" },
-        { "key": "D", "text": "有成绩、有地位、有回报", "type": "rational" }
-      ]
-    },
-    {
-      "id": 6,
-      "text": "领导安排不合理任务，你？",
-      "options": [
-        { "key": "A", "text": "先思考，再委婉提出", "type": "serene" },
-        { "key": "B", "text": "尽量配合，不想冲突", "type": "warm" },
-        { "key": "C", "text": "按自己方式灵活完成", "type": "free" },
-        { "key": "D", "text": "明确逻辑，提出优化", "type": "rational" }
-      ]
-    },
-    {
-      "id": 7,
-      "text": "你更擅长？",
-      "options": [
-        { "key": "A", "text": "深度思考、总结规律", "type": "serene" },
-        { "key": "B", "text": "沟通协调、照顾他人", "type": "warm" },
-        { "key": "C", "text": "创意发散、开拓新思路", "type": "free" },
-        { "key": "D", "text": "统筹推进、拿到结果", "type": "rational" }
-      ]
-    },
-    {
-      "id": 8,
-      "text": "职场中你最讨厌？",
-      "options": [
-        { "key": "A", "text": "浮躁形式、无意义内耗", "type": "serene" },
-        { "key": "B", "text": "勾心斗角、人情复杂", "type": "warm" },
-        { "key": "C", "text": "僵化死板、条条框框", "type": "free" },
-        { "key": "D", "text": "效率低下、目标混乱", "type": "rational" }
-      ]
-    },
-    {
-      "id": 9,
-      "text": "压力下你会？",
-      "options": [
-        { "key": "A", "text": "沉下心，专注解决", "type": "serene" },
-        { "key": "B", "text": "寻求支持，调整情绪", "type": "warm" },
-        { "key": "C", "text": "暂时抽离，重新出发", "type": "free" },
-        { "key": "D", "text": "拆解问题，强行推进", "type": "rational" }
-      ]
-    },
-    {
-      "id": 10,
-      "text": "你职场核心竞争力是？",
-      "options": [
-        { "key": "A", "text": "洞察力强、看问题透彻", "type": "serene" },
-        { "key": "B", "text": "情商高、人缘好、会协作", "type": "warm" },
-        { "key": "C", "text": "敢创新、不设限、适应强", "type": "free" },
-        { "key": "D", "text": "执行力强、靠谱有结果", "type": "rational" }
-      ]
-    }
+    {"id": 1, "text": "工作中你最不能忍的是？", "options": [{"key": "A", "text": "没价值感、纯内耗", "type": "executor"}, {"key": "B", "text": "氛围差、人际复杂", "type": "connector"}, {"key": "C", "text": "条条框框、没发挥空间", "type": "creator"}, {"key": "D", "text": "目标不清、瞎忙", "type": "analyst"}]},
+    {"id": 2, "text": "接到任务，你第一反应？", "options": [{"key": "A", "text": "先拆解，再盯住 deadline 干", "type": "executor"}, {"key": "B", "text": "先看谁一起干、怎么配合", "type": "connector"}, {"key": "C", "text": "先想能不能换个更好玩法", "type": "creator"}, {"key": "D", "text": "先想清楚逻辑和风险", "type": "analyst"}]},
+    {"id": 3, "text": "遇到难搞的工作，你更会？", "options": [{"key": "A", "text": "拆成小步，一步步啃下来", "type": "executor"}, {"key": "B", "text": "找人一起扛、一起想", "type": "connector"}, {"key": "C", "text": "换思路、试新办法", "type": "creator"}, {"key": "D", "text": "先分析本质，再定方案", "type": "analyst"}]},
+    {"id": 4, "text": "你最能发挥的工作环境？", "options": [{"key": "A", "text": "目标清晰、责任到人、看结果", "type": "executor"}, {"key": "B", "text": "团队和谐、沟通多、协作多", "type": "connector"}, {"key": "C", "text": "灵活、可试错、不僵化", "type": "creator"}, {"key": "D", "text": "有空间深度想、不催进度", "type": "analyst"}]},
+    {"id": 5, "text": "你对「职场成功」的定义更接近？", "options": [{"key": "A", "text": "说到做到、拿结果说话", "type": "executor"}, {"key": "B", "text": "被认可、被需要、人缘好", "type": "connector"}, {"key": "C", "text": "做成了别人没做过的事", "type": "creator"}, {"key": "D", "text": "想得透、判断准、少踩坑", "type": "analyst"}]},
+    {"id": 6, "text": "领导安排明显不合理的任务，你会？", "options": [{"key": "A", "text": "先执行，同时找机会说明困难", "type": "executor"}, {"key": "B", "text": "尽量配合，私下再沟通", "type": "connector"}, {"key": "C", "text": "按自己觉得对的方式做出结果", "type": "creator"}, {"key": "D", "text": "摆逻辑和数据，提替代方案", "type": "analyst"}]},
+    {"id": 7, "text": "你觉得自己最拿得出手的是？", "options": [{"key": "A", "text": "执行力、扛事、闭环", "type": "executor"}, {"key": "B", "text": "沟通、协调、带氛围", "type": "connector"}, {"key": "C", "text": "点子、创新、破局", "type": "creator"}, {"key": "D", "text": "分析、判断、想得深", "type": "analyst"}]},
+    {"id": 8, "text": "职场里你最烦的是？", "options": [{"key": "A", "text": "光说不练、没结果", "type": "executor"}, {"key": "B", "text": "勾心斗角、站队", "type": "connector"}, {"key": "C", "text": "死板、不让试", "type": "creator"}, {"key": "D", "text": "没想清楚就干、总返工", "type": "analyst"}]},
+    {"id": 9, "text": "压力爆表时，你更会？", "options": [{"key": "A", "text": "顶住，先把事搞定", "type": "executor"}, {"key": "B", "text": "找同事或上级聊，一起扛", "type": "connector"}, {"key": "C", "text": "先撤一下，换换脑子再上", "type": "creator"}, {"key": "D", "text": "先理清优先级和路径", "type": "analyst"}]},
+    {"id": 10, "text": "你的职场核心竞争力更像？", "options": [{"key": "A", "text": "拿结果、靠谱、能打", "type": "executor"}, {"key": "B", "text": "人缘好、会来事、能整合", "type": "connector"}, {"key": "C", "text": "敢试、能破局、不设限", "type": "creator"}, {"key": "D", "text": "想得透、判断准、少踩坑", "type": "analyst"}]}
   ]
 }

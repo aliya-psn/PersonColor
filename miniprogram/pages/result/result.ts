@@ -1,59 +1,52 @@
 // 结果简要页
-import { results, type ResultType } from '../../data/results'
+import { getResults, type TestType } from '../../data/results'
 
 Page({
   data: {
-    testType: '',
-    resultType: '' as ResultType | '',
+    testType: '' as TestType | '',
+    resultType: '',
     resultInfo: null as Record<string, unknown> | null,
+    scoresStr: '',
   },
 
-  onLoad(options: { type?: string; result?: string }) {
-    const resultType = (options.result || 'serene') as ResultType
-    const info = results[resultType]
+  onLoad(options: { type?: string; result?: string; scores?: string }) {
+    const testType = (options.type || 'life') as TestType
+    const resultType = options.result || ''
+    const results = getResults(testType)
+    const info = resultType ? results[resultType] : null
     if (!info) {
-      wx.showToast({ title: '结果无效', icon: 'none' })
       return
     }
+    const scoresStr = options.scores || ''
+    // 把 scores 写入 storage，report 页可从 storage 兜底读取
+    if (scoresStr && scoresStr.trim()) {
+      try {
+        const nums = scoresStr
+          .trim()
+          .split(',')
+          .map(s => parseInt(s, 10))
+          .filter(n => !isNaN(n))
+        if (nums.length === 4) {
+          const stored = (wx.getStorageSync('personColor_radarScores') as Record<string, number[]>) || {}
+          stored[testType] = nums
+          wx.setStorageSync('personColor_radarScores', stored)
+        }
+      } catch (_) {}
+    }
     this.setData({
-      testType: options.type || 'life',
+      testType,
       resultType,
-      resultInfo: info as Record<string, unknown>,
+      resultInfo: info as unknown as Record<string, unknown>,
+      scoresStr,
     })
   },
 
   goToReport() {
-    wx.showModal({
-      title: '解锁完整报告',
-      content: '观看一段广告即可免费解锁完整性格解析、优势天赋、建议等内容',
-      confirmText: '看广告解锁',
-      success: res => {
-        if (res.confirm) this.watchAdAndUnlock()
-      },
-      fail: err => {
-        console.error('showModal fail', err)
-        this.watchAdAndUnlock()
-      },
+    const { testType, resultType, scoresStr } = this.data
+    const query = scoresStr ? `&scores=${encodeURIComponent(scoresStr)}` : ''
+    wx.navigateTo({
+      url: `/pages/report/report?type=${testType}&result=${resultType}${query}`,
     })
-  },
-
-  watchAdAndUnlock() {
-    const goReport = () => {
-      wx.navigateTo({
-        url: `/pages/report/report?type=${this.data.testType}&result=${this.data.resultType}`,
-      })
-    }
-    try {
-      const videoAd = wx.createRewardedVideoAd({ adUnitId: 'ad-unit-id' })
-      videoAd.onClose(res => {
-        if (res && res.isEnded) goReport()
-        else wx.showToast({ title: '请完整观看广告', icon: 'none' })
-      })
-      videoAd.onError(() => goReport())
-      videoAd.show().catch(() => goReport())
-    } catch {
-      goReport()
-    }
   },
 
   onShare() {

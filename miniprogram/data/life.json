@@ -1,106 +1,16 @@
 {
   "type": "life",
-  "title": "人格底色",
+  "title": "人生底色",
   "questions": [
-    {
-      "id": 1,
-      "text": "遇到压力大时，你更倾向？",
-      "options": [
-        { "key": "A", "text": "独自安静消化", "type": "serene" },
-        { "key": "B", "text": "找人倾诉安慰", "type": "warm" },
-        { "key": "C", "text": "换环境散心", "type": "free" },
-        { "key": "D", "text": "分析问题解决", "type": "rational" }
-      ]
-    },
-    {
-      "id": 2,
-      "text": "你人生最看重的是？",
-      "options": [
-        { "key": "A", "text": "内心平静与真实", "type": "serene" },
-        { "key": "B", "text": "爱与被爱", "type": "warm" },
-        { "key": "C", "text": "自由与体验", "type": "free" },
-        { "key": "D", "text": "成就与价值", "type": "rational" }
-      ]
-    },
-    {
-      "id": 3,
-      "text": "做重要决定时，你更依赖？",
-      "options": [
-        { "key": "A", "text": "直觉与内心感受", "type": "serene" },
-        { "key": "B", "text": "情感与他人建议", "type": "warm" },
-        { "key": "C", "text": "新鲜感与可能性", "type": "free" },
-        { "key": "D", "text": "逻辑与利弊", "type": "rational" }
-      ]
-    },
-    {
-      "id": 4,
-      "text": "你理想的生活状态是？",
-      "options": [
-        { "key": "A", "text": "安稳有序、内心充实", "type": "serene" },
-        { "key": "B", "text": "温暖有人陪伴", "type": "warm" },
-        { "key": "C", "text": "不被束缚、随心而活", "type": "free" },
-        { "key": "D", "text": "不断进步、有目标", "type": "rational" }
-      ]
-    },
-    {
-      "id": 5,
-      "text": "别人对你误解时，你通常？",
-      "options": [
-        { "key": "A", "text": "不想解释，默默承受", "type": "serene" },
-        { "key": "B", "text": "难过，希望被理解", "type": "warm" },
-        { "key": "C", "text": "无所谓，走自己的路", "type": "free" },
-        { "key": "D", "text": "理性说明，澄清事实", "type": "rational" }
-      ]
-    },
-    {
-      "id": 6,
-      "text": "你更讨厌哪种状态？",
-      "options": [
-        { "key": "A", "text": "浮躁、内心不安", "type": "serene" },
-        { "key": "B", "text": "孤独、不被在乎", "type": "warm" },
-        { "key": "C", "text": "被控制、被安排", "type": "free" },
-        { "key": "D", "text": "混乱、无效率", "type": "rational" }
-      ]
-    },
-    {
-      "id": 7,
-      "text": "你对「未来」的态度是？",
-      "options": [
-        { "key": "A", "text": "顺其自然，专注当下", "type": "serene" },
-        { "key": "B", "text": "希望充满爱与温暖", "type": "warm" },
-        { "key": "C", "text": "期待新鲜与变化", "type": "free" },
-        { "key": "D", "text": "规划清晰，稳步前进", "type": "rational" }
-      ]
-    },
-    {
-      "id": 8,
-      "text": "你休息时更喜欢？",
-      "options": [
-        { "key": "A", "text": "独处、看书、思考", "type": "serene" },
-        { "key": "B", "text": "和家人朋友相处", "type": "warm" },
-        { "key": "C", "text": "出门探索、尝试新事物", "type": "free" },
-        { "key": "D", "text": "学习提升、整理规划", "type": "rational" }
-      ]
-    },
-    {
-      "id": 9,
-      "text": "你认为自己最大的特质是？",
-      "options": [
-        { "key": "A", "text": "通透、有深度", "type": "serene" },
-        { "key": "B", "text": "善良、重感情", "type": "warm" },
-        { "key": "C", "text": "勇敢、不妥协", "type": "free" },
-        { "key": "D", "text": "理性、靠谱", "type": "rational" }
-      ]
-    },
-    {
-      "id": 10,
-      "text": "你一生最想成为的人？",
-      "options": [
-        { "key": "A", "text": "内心强大、清醒自洽", "type": "serene" },
-        { "key": "B", "text": "温柔有爱、被人信赖", "type": "warm" },
-        { "key": "C", "text": "自由热烈、忠于自己", "type": "free" },
-        { "key": "D", "text": "沉稳有力、有所成就", "type": "rational" }
-      ]
-    }
+    {"id": 1, "text": "压力大到崩溃时，你第一反应是？", "options": [{"key": "A", "text": "谁也别来，我自己待着", "type": "serene"}, {"key": "B", "text": "立刻想找个人说说话", "type": "warm"}, {"key": "C", "text": "换个地方、换种活法再说", "type": "free"}, {"key": "D", "text": "先理清问题，再想怎么解决", "type": "rational"}]},
+    {"id": 2, "text": "你这辈子最怕白活成什么样？", "options": [{"key": "A", "text": "活成别人期待的样子，内心从没清醒过", "type": "serene"}, {"key": "B", "text": "身边没人爱、也没人值得爱", "type": "warm"}, {"key": "C", "text": "被按在格子间里，一眼望到头", "type": "free"}, {"key": "D", "text": "忙了一辈子，啥也没留下", "type": "rational"}]},
+    {"id": 3, "text": "做重大决定时，你更信什么？", "options": [{"key": "A", "text": "信自己的直觉和内心感受", "type": "serene"}, {"key": "B", "text": "信重要的人怎么说、怎么想", "type": "warm"}, {"key": "C", "text": "信「先试了再说」", "type": "free"}, {"key": "D", "text": "信逻辑、利弊、数据", "type": "rational"}]},
+    {"id": 4, "text": "你理想中的生活，最不能缺的是？", "options": [{"key": "A", "text": "内心秩序和独处空间", "type": "serene"}, {"key": "B", "text": "被爱包围、有人可依", "type": "warm"}, {"key": "C", "text": "不被任何人绑架的自由", "type": "free"}, {"key": "D", "text": "清晰的目标和可见的进步", "type": "rational"}]},
+    {"id": 5, "text": "被误解时，你通常会？", "options": [{"key": "A", "text": "懒得解释，懂的人自然懂", "type": "serene"}, {"key": "B", "text": "很难过，特别希望对方能懂", "type": "warm"}, {"key": "C", "text": "无所谓，反正不靠他们活", "type": "free"}, {"key": "D", "text": "找机会把事实和逻辑讲清楚", "type": "rational"}]},
+    {"id": 6, "text": "你最受不了自己变成哪种人？", "options": [{"key": "A", "text": "浮躁、跟风、内心没根", "type": "serene"}, {"key": "B", "text": "冷漠、没人情味、不被需要", "type": "warm"}, {"key": "C", "text": "听话、认命、被安排", "type": "free"}, {"key": "D", "text": "混乱、低效、一事无成", "type": "rational"}]},
+    {"id": 7, "text": "你对「未来」的态度更接近？", "options": [{"key": "A", "text": "顺其自然，把当下活明白", "type": "serene"}, {"key": "B", "text": "希望未来充满爱与归属", "type": "warm"}, {"key": "C", "text": "未来最好充满变数和可能", "type": "free"}, {"key": "D", "text": "提前规划，一步步实现", "type": "rational"}]},
+    {"id": 8, "text": "累的时候，你最想怎么回血？", "options": [{"key": "A", "text": "一个人待着，看书发呆思考", "type": "serene"}, {"key": "B", "text": "和亲近的人待在一起", "type": "warm"}, {"key": "C", "text": "出门干点不一样的", "type": "free"}, {"key": "D", "text": "列计划、复盘、把事理顺", "type": "rational"}]},
+    {"id": 9, "text": "你觉得自己最拿得出手的特质是？", "options": [{"key": "A", "text": "想得透、不随大流", "type": "serene"}, {"key": "B", "text": "心软、重感情、能接住别人", "type": "warm"}, {"key": "C", "text": "敢做、不认怂、不妥协", "type": "free"}, {"key": "D", "text": "靠谱、有结果、能扛事", "type": "rational"}]},
+    {"id": 10, "text": "你最想成为的那种人？", "options": [{"key": "A", "text": "内心强大、清醒自洽", "type": "serene"}, {"key": "B", "text": "被爱、被需要、被人信赖", "type": "warm"}, {"key": "C", "text": "自由、真实、不讨好任何人", "type": "free"}, {"key": "D", "text": "有成就、有话语权、有结果", "type": "rational"}]}
   ]
 }
