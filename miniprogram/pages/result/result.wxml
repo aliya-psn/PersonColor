@@ -17,10 +17,18 @@
         </view>
       </view>
     </view>
-    <view class="section-header">
-      <text class="section-title">完整报告你将获得</text>
+    <view
+      class="unlock-btn"
+      catchtap="goToReport"
+      hover-class="unlock-btn--hover"
+      hover-stay-time="80"
+    >
+      查看完整报告
     </view>
     <view class="unlock-tip">
+      <view class="section-header">
+        <text class="section-title">完整报告你将获得</text>
+      </view>
       <view class="unlock-list">
         <view class="unlock-item">
           <view class="dot"></view>
@@ -34,14 +42,6 @@
           <view class="dot"></view>
           <text class="unlock-desc">生活 / 情感 / 职场建议与行动清单</text>
         </view>
-      </view>
-      <view
-        class="unlock-btn"
-        catchtap="goToReport"
-        hover-class="unlock-btn--hover"
-        hover-stay-time="80"
-      >
-        立即查看
       </view>
     </view>
   </view>
