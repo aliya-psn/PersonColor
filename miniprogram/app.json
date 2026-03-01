@@ -8,7 +8,7 @@
     "pages/history/history"
   ],
   "window": {
-    "navigationBarTitleText": "人格底色测试",
+    "navigationBarTitleText": "本我岛测试",
     "navigationBarTextStyle": "black",
     "navigationStyle": "custom",
     "backgroundColor": "#fdf6eb"

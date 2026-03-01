@@ -1,6 +1,6 @@
 {
   "type": "life",
-  "title": "人生底色",
+  "title": "人生岛",
   "questions": [
     {"id": 1, "text": "压力大到崩溃时，你第一反应是？", "options": [{"key": "A", "text": "别理我，让我一个人静静", "type": "serene"}, {"key": "B", "text": "赶紧找个人唠唠，不然要憋死了", "type": "warm"}, {"key": "C", "text": "先跑路换个环境，换个活法", "type": "free"}, {"key": "D", "text": "先捋清楚问题在哪，再想办法", "type": "rational"}]},
     {"id": 2, "text": "你这辈子最怕白活成什么样？", "options": [{"key": "A", "text": "活成别人眼里的好孩子，自己却从没清醒过", "type": "serene"}, {"key": "B", "text": "身边没人爱，也没人值得我去爱", "type": "warm"}, {"key": "C", "text": "被按在工位上，一眼看到退休", "type": "free"}, {"key": "D", "text": "忙活一辈子，最后啥也没留下", "type": "rational"}]},

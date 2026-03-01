@@ -2,7 +2,7 @@
 <elegant-bg></elegant-bg>
 <scroll-view class="intro-page" scroll-y>
   <view class="intro-content">
-    <text class="intro-title">人格底色测试须知</text>
+    <text class="intro-title">本我岛测试须知</text>
     <view class="intro-list">
       <view class="intro-item">
         <text class="intro-num">1、</text>
@@ -14,7 +14,7 @@
       </view>
       <view class="intro-item">
         <text class="intro-num">3、</text>
-        <text class="intro-text">四种人格底色没有好坏之分，了解自己的优势与短板，有助于更好的自我认知与人际互动。</text>
+        <text class="intro-text">四种本我岛类型没有好坏之分，了解自己的优势与短板，有助于更好的自我认知与人际互动。</text>
       </view>
       <view class="intro-item">
         <text class="intro-num">4、</text>

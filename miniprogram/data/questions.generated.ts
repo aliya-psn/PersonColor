@@ -20,7 +20,7 @@ export interface QuestionSet {
 
 const lifeData: QuestionSet = {
   type: 'life',
-  title: '人生底色',
+  title: '人生岛',
   questions: [
     { id: 1, text: '压力大到崩溃时，你第一反应是？', options: [{ key: 'A', text: '别理我，让我一个人静静', type: 'serene' }, { key: 'B', text: '赶紧找个人唠唠，不然要憋死了', type: 'warm' }, { key: 'C', text: '先跑路换个环境，换个活法', type: 'free' }, { key: 'D', text: '先捋清楚问题在哪，再想办法', type: 'rational' }] },
     { id: 2, text: '你这辈子最怕白活成什么样？', options: [{ key: 'A', text: '活成别人眼里的好孩子，自己却从没清醒过', type: 'serene' }, { key: 'B', text: '身边没人爱，也没人值得我去爱', type: 'warm' }, { key: 'C', text: '被按在工位上，一眼看到退休', type: 'free' }, { key: 'D', text: '忙活一辈子，最后啥也没留下', type: 'rational' }] },
@@ -37,7 +37,7 @@ const lifeData: QuestionSet = {
 
 const emotionData: QuestionSet = {
   type: 'emotion',
-  title: '情感底色',
+  title: '情感岛',
   questions: [
     { id: 1, text: '在感情里，你最怕对方给你什么感觉？', options: [{ key: 'A', text: '人在心不在，感觉走不进他心里', type: 'safe' }, { key: 'B', text: '忽冷忽热，让我总在猜他到底在想啥', type: 'anxious' }, { key: 'C', text: '黏得太紧，让我感觉要窒息了', type: 'avoidant' }, { key: 'D', text: '说变就变，完全没安全感', type: 'fearful' }] },
     { id: 2, text: '喜欢一个人时，你通常会？', options: [{ key: 'A', text: '慢慢了解，顺其自然在一起', type: 'safe' }, { key: 'B', text: '忍不住主动，想马上知道他喜不喜欢我', type: 'anxious' }, { key: 'C', text: '保持距离，先观察观察再说', type: 'avoidant' }, { key: 'D', text: '既想靠近又怕受伤，反复试探', type: 'fearful' }] },
@@ -54,7 +54,7 @@ const emotionData: QuestionSet = {
 
 const careerData: QuestionSet = {
   type: 'career',
-  title: '职场底色',
+  title: '职场岛',
   questions: [
     { id: 1, text: '工作中你最不能忍的是？', options: [{ key: 'A', text: '没价值感，纯内耗，浪费时间', type: 'executor' }, { key: 'B', text: '氛围差，人际关系复杂，心累', type: 'connector' }, { key: 'C', text: '条条框框太多，没发挥空间', type: 'creator' }, { key: 'D', text: '目标不清，瞎忙一通', type: 'analyst' }] },
     { id: 2, text: '接到任务，你第一反应？', options: [{ key: 'A', text: '先拆解任务，再盯住 deadline 开干', type: 'executor' }, { key: 'B', text: '先看看谁一起干，怎么配合', type: 'connector' }, { key: 'C', text: '先想想能不能换个更好玩的玩法', type: 'creator' }, { key: 'D', text: '先想清楚逻辑和风险', type: 'analyst' }] },

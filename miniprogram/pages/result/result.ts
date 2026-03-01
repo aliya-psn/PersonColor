@@ -14,9 +14,9 @@ interface HistoryRecord {
 }
 
 const TEST_TYPE_TITLES: Record<TestType, string> = {
-  life: '人生底色',
-  emotion: '情感底色',
-  career: '职场底色',
+  life: '人生岛',
+  emotion: '情感岛',
+  career: '职场岛',
 }
 
 function formatTime(timestamp: number): string {
@@ -129,7 +129,7 @@ Page({
 
   onShare() {
     return {
-      title: `我的${this.data.resultInfo?.name || '人格底色'}测试结果，快来测测你的！`,
+      title: `我的${this.data.resultInfo?.name || '本我岛'}测试结果，快来测测你的！`,
       path: '/pages/index/index',
     }
   },

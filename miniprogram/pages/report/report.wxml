@@ -7,7 +7,7 @@
         <image class="card-user-avatar" src="{{userAvatar}}" mode="aspectFill"></image>
         <text class="card-user-nickname">{{userNickname}}</text>
       </view>
-      <view class="label-box">人格底色</view>
+      <view class="label-box">本我岛</view>
       <text class="type-name">{{resultInfo.name}}</text>
       <text class="type-tagline">{{resultInfo.tagline}}</text>
     </view>

@@ -1,11 +1,11 @@
-<navigation-bar title="人格底色测试" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<navigation-bar title="本我岛测试" back="{{false}}" color="black" background="#FFF"></navigation-bar>
 <elegant-bg></elegant-bg>
 <scroll-view class="scrollarea" scroll-y type="list">
   <view class="container">
     <view class="header-section">
       <view class="hero">
-        <text class="hero-title">人格底色</text>
-        <text class="hero-desc">人生 · 情感 · 职场，三个维度读懂你的底色</text>
+        <text class="hero-title">本我岛</text>
+        <text class="hero-desc">人生 · 情感 · 职场，三个维度探索你的本我</text>
       </view>
     </view>
     <view class="dimension-section">

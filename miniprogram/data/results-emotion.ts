@@ -1,4 +1,4 @@
-// 情感底色测试结果（依恋/关系维度）
+// 情感岛测试结果（依恋/关系维度）
 export interface ResultInfo {
   name: string
   tagline: string

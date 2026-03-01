@@ -1,4 +1,4 @@
-// 职场底色测试结果（工作风格维度）
+// 职场岛测试结果（工作风格维度）
 export interface ResultInfo {
   name: string
   tagline: string

@@ -1,4 +1,4 @@
-// 人生底色测试结果（四型：沉静 / 温暖 / 自由 / 理性）
+// 人生岛测试结果（四型：沉静 / 温暖 / 自由 / 理性）
 
 export interface ResultInfo {
   name: string

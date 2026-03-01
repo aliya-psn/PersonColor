@@ -4,9 +4,9 @@ import { getResults, getRadarLabels } from '../../data/results'
 const defaultAvatar = '/images/default-avatar.svg'
 const RADAR_STORAGE_KEY = 'personColor_radarScores'
 const RADAR_TITLES: Record<RadarDim, string> = {
-  life: '人生底色',
-  emotion: '情感底色',
-  career: '职场底色',
+  life: '人生岛',
+  emotion: '情感岛',
+  career: '职场岛',
 }
 
 type RadarDim = 'life' | 'emotion' | 'career'
@@ -263,7 +263,7 @@ Page({
     const labelY = cardBgY + 40 * rpx2px
     ctx.setFillStyle('#1e3a5f')
     ctx.setFontSize(28 * rpx2px)
-    ctx.fillText('人格底色', labelX, labelY)
+    ctx.fillText('本我岛', labelX, labelY)
 
     // 绘制类型名称
     const nameY = labelY + 50 * rpx2px
@@ -404,7 +404,7 @@ Page({
       const tipY = footerY + 40 * rpx2px
       ctx.setFillStyle('#64748b')
       ctx.setFontSize(22 * rpx2px)
-      ctx.fillText('扫码体验「人格底色」测试', canvasWidth / 2, tipY)
+      ctx.fillText('扫码体验「本我岛」测试', canvasWidth / 2, tipY)
       
       ctx.draw(false, () => {
         setTimeout(() => {
@@ -579,7 +579,7 @@ Page({
 
   onShare() {
     return {
-      title: `我的${this.data.resultInfo?.name || '人格底色'}完整报告，快来测测你的！`,
+      title: `我的${this.data.resultInfo?.name || '本我岛'}完整报告，快来测测你的！`,
       path: '/pages/index/index',
     }
   },

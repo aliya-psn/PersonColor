@@ -1,6 +1,6 @@
 {
   "type": "career",
-  "title": "职场底色",
+  "title": "职场岛",
   "questions": [
     {"id": 1, "text": "工作中你最不能忍的是？", "options": [{"key": "A", "text": "没价值感，纯内耗，浪费时间", "type": "executor"}, {"key": "B", "text": "氛围差，人际关系复杂，心累", "type": "connector"}, {"key": "C", "text": "条条框框太多，没发挥空间", "type": "creator"}, {"key": "D", "text": "目标不清，瞎忙一通", "type": "analyst"}]},
     {"id": 2, "text": "接到任务，你第一反应？", "options": [{"key": "A", "text": "先拆解任务，再盯住 deadline 开干", "type": "executor"}, {"key": "B", "text": "先看看谁一起干，怎么配合", "type": "connector"}, {"key": "C", "text": "先想想能不能换个更好玩的玩法", "type": "creator"}, {"key": "D", "text": "先想清楚逻辑和风险", "type": "analyst"}]},
