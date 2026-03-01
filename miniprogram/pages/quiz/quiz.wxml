@@ -3,7 +3,7 @@
 <view class="quiz-page">
   <view class="quiz-header">
     <view class="quiz-header-top">
-      <view class="quiz-badge">测评进行中</view>
+      <view class="quiz-badge">测评中</view>
       <view class="quiz-meta">
         <text class="progress-text">第 {{currentIndex + 1}} / {{questions.length}} 题</text>
         <text class="progress-percent">{{progress}}%</text>
@@ -13,30 +13,32 @@
       <view class="progress-fill" style="width: {{progress}}%"></view>
     </view>
   </view>
-  <view class="question-area" wx:if="{{questions[currentIndex]}}">
-    <view class="question-card">
-      <text class="question-kicker">Q{{currentIndex + 1}}</text>
-      <text class="question-text">{{questions[currentIndex].text}}</text>
-    </view>
-    <view class="options-head">
-      <view class="options-label">请选择最符合你的选项</view>
-      <text class="options-hint">轻触选择</text>
-    </view>
-    <view class="options">
-      <view
-        wx:for="{{questions[currentIndex].options}}"
-        wx:key="key"
-        class="option-card"
-        data-type="{{item.type}}"
-        bindtap="onSelect"
-        hover-class="option-card--hover"
-        hover-stay-time="80"
-      >
-        <view class="option-key-wrap">
-          <text class="option-key">{{item.key}}</text>
+  <view class="question-area">
+    <view class="question-container {{animating ? 'animating' : ''}} {{slideDirection}}" wx:if="{{questions[currentIndex]}}">
+      <view class="question-card">
+        <text class="question-kicker">Q{{currentIndex + 1}}</text>
+        <text class="question-text">{{questions[currentIndex].text}}</text>
+      </view>
+      <view class="options-head">
+        <view class="options-label">请选择最符合你的选项</view>
+      </view>
+      <view class="options">
+        <view
+          wx:for="{{questions[currentIndex].options}}"
+          wx:key="key"
+          wx:for-index="optIndex"
+          class="option-card option-card-{{optIndex}}"
+          data-type="{{item.type}}"
+          bindtap="onSelect"
+          hover-class="option-card--hover"
+          hover-stay-time="80"
+        >
+          <view class="option-key-wrap">
+            <text class="option-key">{{item.key}}</text>
+          </view>
+          <text class="option-text">{{item.text}}</text>
+          <text class="option-chevron">›</text>
         </view>
-        <text class="option-text">{{item.text}}</text>
-        <text class="option-chevron">›</text>
       </view>
     </view>
   </view>

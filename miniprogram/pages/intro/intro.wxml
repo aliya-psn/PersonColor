@@ -20,6 +20,14 @@
         <text class="intro-num">4、</text>
         <text class="intro-text">共 10 道题，每题选择最符合你的选项，没有对错答案。</text>
       </view>
+      <view class="intro-item">
+        <text class="intro-num">5、</text>
+        <text class="intro-text">测试完成后，结果会自动保存到本地，你可以在"测试记录"页面查看历史记录。</text>
+      </view>
+    </view>
+    <view class="intro-privacy">
+      <view class="privacy-icon">🔒</view>
+      <text class="privacy-text">隐私说明：所有测试数据仅保存在你的设备本地，不会上传到服务器，完全不用担心数据泄露风险。</text>
     </view>
     <view class="intro-btn" bindtap="onEnter">进入测试 ›</view>
   </view>

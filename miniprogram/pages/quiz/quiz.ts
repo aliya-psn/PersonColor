@@ -10,6 +10,8 @@ Page({
     currentIndex: 0,
     answers: [] as string[],
     progress: 0,
+    animating: false,
+    slideDirection: 'slide-in',
   },
 
   onLoad(options: { type?: string }) {
@@ -26,7 +28,20 @@ Page({
       currentIndex: 0,
       answers: [],
       progress: 0,
+      animating: false,
+      slideDirection: 'slide-in',
     })
+    // 首次加载时触发进入动画
+    setTimeout(() => {
+      this.setData({
+        animating: true,
+      })
+      setTimeout(() => {
+        this.setData({
+          animating: false,
+        })
+      }, 400)
+    }, 50)
   },
 
   onSelect(e: WechatMiniprogram.TouchEvent) {
@@ -44,11 +59,28 @@ Page({
       return
     }
 
+    // 触发退出动画
     this.setData({
-      answers: newAnswers,
-      currentIndex: nextIndex,
-      progress: Math.round((nextIndex / questions.length) * 100),
+      animating: true,
+      slideDirection: 'slide-out',
     })
+
+    // 等待退出动画完成后切换题目
+    setTimeout(() => {
+      this.setData({
+        currentIndex: nextIndex,
+        answers: newAnswers,
+        progress: Math.round((nextIndex / questions.length) * 100),
+        slideDirection: 'slide-in',
+      })
+
+      // 触发进入动画
+      setTimeout(() => {
+        this.setData({
+          animating: false,
+        })
+      }, 50)
+    }, 300)
   },
 
   calcScore(answers: string[]): { winner: string; scores: number[] } {

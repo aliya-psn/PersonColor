@@ -75,6 +75,29 @@ page {
 
 .question-area {
   flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.question-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.question-container.animating {
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.question-container.slide-out {
+  transform: translateX(-120rpx) scale(0.92);
+  opacity: 0;
+  filter: blur(8rpx);
+}
+
+.question-container.slide-in {
+  animation: slideInFromRight 0.5s cubic-bezier(0.2, 0.9, 0.2, 1);
 }
 
 .question-card {
@@ -84,7 +107,7 @@ page {
   margin-bottom: 32rpx;
   border: 1rpx solid rgba(201, 122, 101, 0.14);
   box-shadow: 0 10rpx 26rpx rgba(168, 107, 74, 0.12);
-  animation: fadeUp 280ms cubic-bezier(0.2, 0.9, 0.2, 1);
+  animation: questionCardIn 0.5s cubic-bezier(0.2, 0.9, 0.2, 1) 0.1s both;
 }
 
 .question-kicker {
@@ -111,16 +134,12 @@ page {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 24rpx;
+  animation: fadeInUp 0.4s cubic-bezier(0.2, 0.9, 0.2, 1) 0.2s both;
 }
 
 .options-label {
   font-size: 26rpx;
   color: #a86b4a;
-}
-
-.options-hint {
-  font-size: 24rpx;
-  color: rgba(168, 107, 74, 0.75);
 }
 
 .options {
@@ -138,7 +157,24 @@ page {
   border: 1rpx solid rgba(201, 122, 101, 0.14);
   box-shadow: 0 10rpx 24rpx rgba(168, 107, 74, 0.11);
   transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
-  animation: fadeUp 320ms cubic-bezier(0.2, 0.9, 0.2, 1);
+  opacity: 0;
+  animation: fadeUpStagger 0.5s cubic-bezier(0.2, 0.9, 0.2, 1) forwards;
+}
+
+.option-card-0 {
+  animation-delay: 0.1s;
+}
+
+.option-card-1 {
+  animation-delay: 0.15s;
+}
+
+.option-card-2 {
+  animation-delay: 0.2s;
+}
+
+.option-card-3 {
+  animation-delay: 0.25s;
 }
 
 .option-card--hover {
@@ -188,5 +224,51 @@ page {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(80rpx) scale(0.94);
+    filter: blur(12rpx);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes questionCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(24rpx) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16rpx);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUpStagger {
+  from {
+    opacity: 0;
+    transform: translateY(24rpx) scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
   }
 }

@@ -2,31 +2,41 @@
 <elegant-bg></elegant-bg>
 <scroll-view class="scrollarea" scroll-y type="list">
   <view class="container">
-    <view class="hero">
-      <text class="hero-label">发现最真实的你</text>
-      <text class="hero-title">人格底色</text>
-      <text class="hero-desc">人生 · 情感 · 职场，三个维度读懂你的底色</text>
-    </view>
-    <view class="dimension-list">
-      <view
-        wx:for="{{dimensions}}"
-        wx:key="type"
-        class="dimension-item dimension-item-{{item.type}}"
-        bindtap="onSelect"
-        data-type="{{item.type}}"
-      >
-        <view class="dimension-icon-wrap">
-          <image class="dimension-icon" src="{{item.icon}}" mode="aspectFit"></image>
-        </view>
-        <view class="dimension-content">
-          <text class="dimension-title">{{item.title}}</text>
-          <text class="dimension-desc">{{item.desc}}</text>
-        </view>
-        <text class="dimension-arrow">›</text>
+    <view class="header-section">
+      <view class="hero">
+        <text class="hero-title">人格底色</text>
+        <text class="hero-desc">人生 · 情感 · 职场，三个维度读懂你的底色</text>
       </view>
     </view>
-    <view class="footer-tip">
-      <text class="footer-text">10 道题 · 4 种人格底色 · 完整性格解析</text>
+    <view class="dimension-section">
+      <text class="dimension-section-label">选择维度，开始探索</text>
+      <view class="dimension-list">
+        <view
+          wx:for="{{dimensions}}"
+          wx:key="type"
+          class="dimension-item dimension-item-{{item.type}}"
+          bindtap="onSelect"
+          data-type="{{item.type}}"
+        >
+          <view class="dimension-accent"></view>
+          <view class="dimension-icon-wrap">
+            <image class="dimension-icon" src="{{item.icon}}" mode="aspectFit"></image>
+          </view>
+          <view class="dimension-content">
+            <text class="dimension-title">{{item.title}}</text>
+            <text class="dimension-desc">{{item.desc}}</text>
+          </view>
+          <text class="dimension-arrow">›</text>
+        </view>
+      </view>
+    </view>
+    <view class="history-footer">
+      <view class="history-btn" bindtap="onHistoryTap">
+        <view class="history-icon-wrap">
+          <image class="history-icon" src="/images/icon-history.svg" mode="aspectFit"></image>
+        </view>
+        <text class="history-label">测试记录</text>
+      </view>
     </view>
   </view>
 </scroll-view>

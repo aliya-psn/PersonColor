@@ -1,8 +1,35 @@
+// 变量
+$page-bg: #faf8f5;
+$text-primary: #1e293b;
+$text-secondary: #64748b;
+$text-muted: #94a3b8;
+$border-light: #cbd5e1;
+$shadow: rgba(30, 41, 59, 0.08);
+$radius: 28rpx;
+
+$dimension-themes: (
+  life: (
+    accent: linear-gradient(180deg, #f59e0b 0%, #d97706 100%),
+    icon-bg: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%),
+    icon-shadow: rgba(245, 158, 11, 0.2),
+  ),
+  emotion: (
+    accent: linear-gradient(180deg, #ec4899 0%, #db2777 100%),
+    icon-bg: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%),
+    icon-shadow: rgba(236, 72, 153, 0.2),
+  ),
+  career: (
+    accent: linear-gradient(180deg, #14b8a6 0%, #0d9488 100%),
+    icon-bg: linear-gradient(135deg, #ccfbf1 0%, #99f6e4 100%),
+    icon-shadow: rgba(20, 184, 166, 0.2),
+  ),
+);
+
 page {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background: #faf8f5;
+  background: $page-bg;
 }
 
 .scrollarea {
@@ -13,132 +40,240 @@ page {
 }
 
 .container {
-  padding: 160rpx 32rpx 100rpx;
+  position: relative;
+  padding: 120rpx 32rpx 40rpx;
+  padding-bottom: calc(40rpx + env(safe-area-inset-bottom));
   max-width: 680rpx;
   margin: 0 auto;
-}
 
-// Hero：更简洁、有呼吸感
-.hero {
-  text-align: center;
-  margin-bottom: 56rpx;
-}
+  .hero-label-wrap {
+    position: absolute;
+    top: 32rpx;
+    right: 32rpx;
 
-.hero-label {
-  display: block;
-  font-size: 22rpx;
-  font-weight: 600;
-  letter-spacing: 0.2em;
-  color: #94a3b8;
-  margin-bottom: 16rpx;
-  text-transform: uppercase;
-}
+    .hero-label {
+      font-size: 20rpx;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      color: $text-muted;
+      text-transform: uppercase;
+    }
+  }
 
-.hero-title {
-  display: block;
-  font-size: 52rpx;
-  font-weight: 800;
-  color: #1e293b;
-  letter-spacing: 0.02em;
-  margin-bottom: 16rpx;
-}
+  .header-section {
+    margin-bottom: 36rpx;
+  }
 
-.hero-desc {
-  display: block;
-  font-size: 28rpx;
-  color: #64748b;
-  line-height: 1.6;
-  font-weight: 400;
-}
+  .hero {
+    text-align: center;
 
-// 维度列表：卡片更通透、图标有底色
-.dimension-list {
-  display: flex;
-  flex-direction: column;
-  gap: 24rpx;
+    .hero-title {
+      display: block;
+      font-size: 52rpx;
+      font-weight: 800;
+      color: $text-primary;
+      letter-spacing: 0.02em;
+      margin-bottom: 12rpx;
+    }
+
+    .hero-desc {
+      display: block;
+      font-size: 28rpx;
+      color: $text-secondary;
+      line-height: 1.6;
+      font-weight: 400;
+    }
+  }
+
+  .history-footer {
+    margin-top: 48rpx;
+    padding-top: 32rpx;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120rpx;
+      height: 2rpx;
+      background: linear-gradient(90deg, transparent 0%, rgba(30, 41, 59, 0.08) 50%, transparent 100%);
+    }
+  }
+
+  .history-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12rpx;
+    padding: 20rpx 40rpx;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20rpx);
+    border-radius: 48rpx;
+    box-shadow: 0 4rpx 20rpx rgba(30, 41, 59, 0.06), 0 0 0 1rpx rgba(30, 41, 59, 0.04);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &:active {
+      transform: translateY(-2rpx) scale(0.98);
+      box-shadow: 0 6rpx 28rpx rgba(30, 41, 59, 0.1), 0 0 0 1rpx rgba(30, 41, 59, 0.06);
+      background: rgba(255, 255, 255, 0.95);
+
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  .history-icon-wrap {
+    width: 40rpx;
+    height: 40rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.08) 0%, rgba(236, 72, 153, 0.08) 100%);
+    border-radius: 10rpx;
+    border: 1rpx solid rgba(245, 158, 11, 0.12);
+  }
+
+  .history-icon {
+    width: 28rpx;
+    height: 28rpx;
+    opacity: 1;
+    transition: transform 0.3s ease;
+  }
+
+  .history-label {
+    font-size: 28rpx;
+    color: $text-primary;
+    font-weight: 500;
+    letter-spacing: 0.5rpx;
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+  }
+
+  .history-btn:active .history-icon {
+    transform: scale(1.1);
+  }
+
+  .history-btn:active .history-label {
+    opacity: 1;
+  }
+
+  .dimension-section {
+    margin-top: 0;
+
+    .dimension-section-label {
+      display: block;
+      font-size: 24rpx;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      color: $text-muted;
+      margin-bottom: 24rpx;
+      text-transform: uppercase;
+    }
+
+    .dimension-list {
+      display: flex;
+      flex-direction: column;
+      gap: 24rpx;
+    }
+  }
 }
 
 .dimension-item {
+  position: relative;
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 36rpx 32rpx;
+  padding: 36rpx 32rpx 36rpx 36rpx;
   background: #fff;
-  border-radius: 24rpx;
-  box-shadow: 0 2rpx 24rpx rgba(30, 41, 59, 0.06);
-  border: 1rpx solid rgba(30, 41, 59, 0.04);
+  border-radius: $radius;
+  box-shadow: 0 4rpx 32rpx $shadow, 0 0 0 1rpx rgba(30, 41, 59, 0.03);
+  overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
 
-.dimension-item:active {
-  transform: scale(0.99);
-  box-shadow: 0 2rpx 16rpx rgba(30, 41, 59, 0.08);
-}
+  &:active {
+    transform: scale(0.99);
+    box-shadow: 0 2rpx 24rpx rgba(30, 41, 59, 0.1), 0 0 0 1rpx rgba(30, 41, 59, 0.05);
+  }
 
-.dimension-icon-wrap {
-  width: 96rpx;
-  height: 96rpx;
-  border-radius: 24rpx;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 28rpx;
-  flex-shrink: 0;
-}
+  .dimension-accent {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 6rpx;
+    border-radius: $radius 0 0 $radius;
+  }
 
-.dimension-item-life .dimension-icon-wrap {
-  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-}
+  .dimension-icon-wrap {
+    width: 104rpx;
+    height: 104rpx;
+    border-radius: 26rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 32rpx;
+    flex-shrink: 0;
+  }
 
-.dimension-item-emotion .dimension-icon-wrap {
-  background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
-}
+  .dimension-icon {
+    width: 52rpx;
+    height: 52rpx;
+  }
 
-.dimension-item-career .dimension-icon-wrap {
-  background: linear-gradient(135deg, #ccfbf1 0%, #99f6e4 100%);
-}
+  .dimension-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
 
-.dimension-icon {
-  width: 48rpx;
-  height: 48rpx;
-}
+  .dimension-title {
+    font-size: 34rpx;
+    font-weight: 700;
+    color: $text-primary;
+    margin-bottom: 8rpx;
+    letter-spacing: 0.02em;
+  }
 
-.dimension-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-}
+  .dimension-desc {
+    font-size: 28rpx;
+    color: $text-secondary;
+    line-height: 1.5;
+  }
 
-.dimension-title {
-  font-size: 32rpx;
-  font-weight: 700;
-  color: #1e293b;
-  margin-bottom: 6rpx;
-  letter-spacing: 0.02em;
-}
+  .dimension-arrow {
+    font-size: 40rpx;
+    color: $border-light;
+    font-weight: 300;
+    margin-left: 16rpx;
+  }
 
-.dimension-desc {
-  font-size: 26rpx;
-  color: #64748b;
-  line-height: 1.45;
-}
-
-.dimension-arrow {
-  font-size: 36rpx;
-  color: #cbd5e1;
-  font-weight: 300;
-  margin-left: 12rpx;
-}
-
-.footer-tip {
-  margin-top: 56rpx;
-  padding: 24rpx 0;
-  text-align: center;
-}
-
-.footer-text {
-  font-size: 22rpx;
-  color: #94a3b8;
-  letter-spacing: 0.02em;
+  @each $type, $theme in $dimension-themes {
+    &.dimension-item-#{$type} .dimension-accent {
+      background: map-get($theme, accent);
+    }
+    &.dimension-item-#{$type} .dimension-icon-wrap {
+      background: map-get($theme, icon-bg);
+      box-shadow: 0 4rpx 16rpx map-get($theme, icon-shadow);
+    }
+  }
 }

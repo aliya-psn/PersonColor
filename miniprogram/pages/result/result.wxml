@@ -10,19 +10,9 @@
       <view class="result-card">
         <text class="result-name">{{resultInfo.name}}</text>
         <text class="result-summary">{{resultInfo.summary}}</text>
-        <view class="result-divider"></view>
-        <view class="result-actions">
-          <view
-            class="primary-cta"
-            catchtap="goToReport"
-            hover-class="primary-cta--hover"
-            hover-stay-time="80"
-          >
-            <view class="cta-text-wrap">
-              <text class="cta-title">查看完整报告</text>
-              <text class="cta-sub">限时免费</text>
-            </view>
-            <text class="cta-chevron">›</text>
+        <view class="result-tags" wx:if="{{resultInfo.tags && resultInfo.tags.length > 0}}">
+          <view class="result-tag" wx:for="{{resultInfo.tags}}" wx:key="*this" wx:for-item="tag">
+            {{tag}}
           </view>
         </view>
       </view>
@@ -54,8 +44,5 @@
         立即查看
       </view>
     </view>
-    <button class="share-btn" open-type="share" hover-class="share-btn--hover" hover-stay-time="80">
-      分享给好友
-    </button>
   </view>
 </scroll-view>

@@ -68,10 +68,9 @@
       </view>
     </view>
     <view class="btn-area">
-      <view class="btn-row">
-        <view class="btn-primary" bindtap="onGenerateImage">生成图片</view>
-        <view class="btn-secondary" bindtap="onTestAgain">再测一次</view>
-      </view>
+      <view class="btn-secondary" bindtap="onTestAgain">再测一次</view>
     </view>
   </view>
+  <!-- 隐藏的 canvas 用于生成图片 -->
+  <canvas canvas-id="shareCanvas" id="share-canvas" class="share-canvas" style="width: 750px; height: 2000px;"></canvas>
 </scroll-view>

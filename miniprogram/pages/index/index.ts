@@ -19,5 +19,10 @@ Component({
         : `/pages/intro/intro?type=${type}`
       wx.navigateTo({ url })
     },
+    onHistoryTap() {
+      wx.navigateTo({
+        url: '/pages/history/history',
+      })
+    },
   },
 })

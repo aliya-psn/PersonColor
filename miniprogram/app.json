@@ -1,9 +1,11 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/intro/intro","pages/quiz/quiz",
+    "pages/intro/intro",
+    "pages/quiz/quiz",
     "pages/result/result",
-    "pages/report/report"
+    "pages/report/report",
+    "pages/history/history"
   ],
   "window": {
     "navigationBarTitleText": "人格底色测试",
