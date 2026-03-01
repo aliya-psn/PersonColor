@@ -65,7 +65,7 @@ Page({
       slideDirection: 'slide-out',
     })
 
-    // 等待退出动画完成后切换题目
+    // 等待退出动画完成后切换题目（优化时序，让过渡更流畅）
     setTimeout(() => {
       this.setData({
         currentIndex: nextIndex,
@@ -74,13 +74,13 @@ Page({
         slideDirection: 'slide-in',
       })
 
-      // 触发进入动画
+      // 触发进入动画（稍微延迟，确保DOM更新完成）
       setTimeout(() => {
         this.setData({
           animating: false,
         })
-      }, 50)
-    }, 300)
+      }, 30)
+    }, 280)
   },
 
   calcScore(answers: string[]): { winner: string; scores: number[] } {

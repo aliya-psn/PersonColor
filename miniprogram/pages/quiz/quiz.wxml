@@ -16,11 +16,20 @@
   <view class="question-area">
     <view class="question-container {{animating ? 'animating' : ''}} {{slideDirection}}" wx:if="{{questions[currentIndex]}}">
       <view class="question-card">
-        <text class="question-kicker">Q{{currentIndex + 1}}</text>
+        <view class="question-header">
+          <view class="question-number-badge">
+            <text class="question-number-text">{{currentIndex + 1}}</text>
+          </view>
+          <text class="question-kicker">问题</text>
+        </view>
         <text class="question-text">{{questions[currentIndex].text}}</text>
+        <view class="question-decoration"></view>
       </view>
       <view class="options-head">
-        <view class="options-label">请选择最符合你的选项</view>
+        <view class="options-label-wrapper">
+          <text class="options-icon">✨</text>
+          <text class="options-label">请选择最符合你的选项</text>
+        </view>
       </view>
       <view class="options">
         <view
@@ -36,7 +45,9 @@
           <view class="option-key-wrap">
             <text class="option-key">{{item.key}}</text>
           </view>
-          <text class="option-text">{{item.text}}</text>
+          <view class="option-content">
+            <text class="option-text">{{item.text}}</text>
+          </view>
           <text class="option-chevron">›</text>
         </view>
       </view>
